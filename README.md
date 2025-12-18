@@ -10,4 +10,4 @@
 
  Practiced basic input/output in C#.
 
- Converted and uploaded 10 basic programs to GitHub.
+ uploaded 10 programs to GitHub.
