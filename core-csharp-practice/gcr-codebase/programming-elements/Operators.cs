@@ -61,5 +61,9 @@ public class Operators
         Operators op = new Operators();
         Console.WriteLine(op is object);
         Console.WriteLine(op is string);
+		
+		object op1=100;
+		Console.WriteLine(op1 is int);
+		
     }
 }
