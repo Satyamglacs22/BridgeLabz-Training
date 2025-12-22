@@ -1,31 +1,52 @@
 # BridgeLabz-Training
 
+
 📅 Day 1 – 18 December 2025
 
-🚀 Learning Summary
+🔹 Environment Setup & Basics
 
- Set up the C#/.NET environment using Command Prompt.
- 
- Learned to run C# programs using csc and dotnet run.
+Successfully set up the C#/.NET development environment using Command Prompt.
 
- Practiced basic input/output in C#.
+Learned how to compile and execute C# programs using csc and dotnet run.
 
- uploaded 10 programs to GitHub.
+Practiced basic input/output operations in C#.
 
- 📅 Day 2 – 19 December 2025
- 
-🚀 Learning Summary
+Solved and pushed 10 beginner-level programs to GitHub.
 
-Studied the .NET Framework architecture and understood its core components.
+📅 Day 2 – 19 December 2025
 
-Learned C# fundamentals, including:
+🔹 Core Concepts & Fundamentals
 
-   Data Types
+Studied the .NET Framework architecture in detail.
 
-   Access Modifiers
+Learned about C# data types, access modifiers, and operators.
 
-   Operators
+Solved 16 Level 1 coding questions to strengthen fundamentals.
 
-Solved 16 Level-1 code problems to strengthen basics.
+Solved 12 Level 2 coding questions focused on logic building.
 
-Practiced 12 Level-2 problem-solving questions for deeper understanding.
+📅 Day 3 – 20 December 2025
+
+🔹 Practice & Logic Building
+
+Continued hands-on practice with C# programs of increasing difficulty.
+
+Worked extensively with loops, conditional statements, and collections.
+
+Improved problem-solving approach and code readability.
+
+Regularly pushed completed programs to GitHub.
+
+📅 Day 4 – 22 December 2025
+
+🔹 Assignment Completion & GitHub Progress
+
+Started the assignment by solving 18 Level 1 questions to reinforce core concepts.
+
+Successfully pushed all Level 1 solutions to GitHub.
+
+Continued with 12 Level 2 questions, involving higher logical and analytical complexity.
+
+Completed the assignment and pushed all solutions to GitHub.
+
+Focused on clean code, consistency, and effective use of GitHub for version control.
