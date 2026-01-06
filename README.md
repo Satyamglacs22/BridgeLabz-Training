@@ -1,52 +1,323 @@
 # BridgeLabz-Training
 
+## 📅 Day 1 — 18 December 2025
 
-📅 Day 1 – 18 December 2025
+### 🎯 Learning Goals
 
-🔹 Environment Setup & Basics
+* Understand fundamentals of **C#** and **.NET Framework**
+* Learn basic **Git & GitHub workflow**
+* Maintain a clean and structured project repository
 
-Successfully set up the C#/.NET development environment using Command Prompt.
+### 🛠️ Activities & Work Completed
 
-Learned how to compile and execute C# programs using csc and dotnet run.
+* Created a new GitHub repository
+* Connected GitHub with local system
+* Initialized Git using `git init`
+* Designed a structured folder hierarchy
+* Learned basics of **C# and .NET**
+* Compared **C# vs Java**
+* Understood **Compiler vs Interpreter**
+* Solved **10 basic C# programming questions**
 
-Practiced basic input/output operations in C#.
+### 🧠 Key Takeaways
 
-Solved and pushed 10 beginner-level programs to GitHub.
+* Importance of version control in real-world projects
+* Role of .NET in application development
+* Clean project structure improves maintainability
 
-📅 Day 2 – 19 December 2025
+---
 
-🔹 Core Concepts & Fundamentals
+## 📅 Day 2 — 19 December 2025
 
-Studied the .NET Framework architecture in detail.
+### 🎯 Learning Goals
 
-Learned about C# data types, access modifiers, and operators.
+* Understand **.NET Framework architecture**
+* Strengthen C# fundamentals
+* Improve logical thinking
 
-Solved 16 Level 1 coding questions to strengthen fundamentals.
+### 🛠️ Activities & Work Completed
 
-Solved 12 Level 2 coding questions focused on logic building.
+* Studied core components of the .NET Framework
+* Learned **Operators, Access Modifiers, Data Types**
+* Solved **16 Level-1 coding problems**
+* Practiced **12 Level-2 logical problems**
 
-📅 Day 3 – 20 December 2025
+### 🧠 Key Takeaways
 
-🔹 Practice & Logic Building
+* Clear understanding of internal working of .NET
+* Stronger command over C# syntax
+* Increased confidence in problem-solving
 
-Continued hands-on practice with C# programs of increasing difficulty.
+---
 
-Worked extensively with loops, conditional statements, and collections.
+## 📅 Day 3 — 20 December 2025
 
-Improved problem-solving approach and code readability.
+### 🎯 Focus Areas
 
-Regularly pushed completed programs to GitHub.
+* Understanding **Access Modifiers**
+* Revising C# fundamentals
+* Practicing problems on **LeetCode**
 
-📅 Day 4 – 22 December 2025
+### ⚙️ Tasks Completed
 
-🔹 Assignment Completion & GitHub Progress
+* Studied access modifiers:
 
-Started the assignment by solving 18 Level 1 questions to reinforce core concepts.
+  * `public`
+  * `private`
+  * `protected`
+  * `internal`
+* Revised:
 
-Successfully pushed all Level 1 solutions to GitHub.
+  * Data types
+  * Operators
+  * Program structure
+* Read official documentation and study resources
+* Solved **8 LeetCode problems**
 
-Continued with 12 Level 2 questions, involving higher logical and analytical complexity.
+---
 
-Completed the assignment and pushed all solutions to GitHub.
+## 📅 Day 4 — 22 December 2025
 
-Focused on clean code, consistency, and effective use of GitHub for version control.
+### 🎯 Learning Goals
+
+* Understand **Control Flow**
+* Learn decision-making and loops
+* Apply logic in coding problems
+
+### 🔀 Control Flow Concepts
+
+Control flow defines **how code executes**:
+
+* Decision making
+* Repetition
+* Conditional branching
+
+### 🛠️ Types of Control Flow
+
+* **Conditional Statements**: `if`, `else`, `switch`
+* **Loops**: `for`, `while`, `do-while`, `foreach`
+* **Jump Statements**: `break`, `continue`, `return`
+
+### 🧠 Key Takeaways
+
+* Control flow drives program logic
+* Loops reduce redundancy
+* Conditions enable smarter decisions
+
+---
+
+## 📅 Day 5 — 23 December 2025
+
+### 🎯 Learning Goals
+
+* Understand arrays in C#
+* Work with **1-D and 2-D arrays**
+* Solve array-based problems
+
+### 📚 Arrays Overview
+
+* Stores multiple values of same data type
+* Accessed using indexes
+
+### 🔹 Types of Arrays
+
+* **1-D Array**: Single sequence
+* **2-D Array**: Rows and columns
+
+### 🧠 Key Takeaways
+
+* Arrays simplify data handling
+* Loops are essential for traversal
+* Different array types serve different needs
+
+---
+
+## 📅 Day 6 — 24 December 2025
+
+### 🎯 Learning Goals
+
+* Understand **methods**
+* Use parameters and return values
+* Apply methods in problem-solving
+
+### 📚 Methods Overview
+
+A method is a block of code that:
+
+* Performs a specific task
+* Improves readability and reusability
+
+### 🔹 Types of Methods
+
+* Void methods
+* Return type methods
+* Methods with parameters
+* Methods without parameters
+
+### 🧠 Key Takeaways
+
+* Methods reduce duplication
+* Parameters make code flexible
+* Improves overall code structure
+
+---
+
+## 📅 Day 7 — 26 December 2025
+
+### 🎯 Learning Goals
+
+* Understand **strings**
+* Learn string methods
+* Practice string-based logic
+
+### 📚 Strings Overview
+
+* Strings are sequences of characters
+* Strings in C# are **immutable**
+
+### 🔹 Topics Covered
+
+* Declaration & initialization
+* Common string methods
+* Character traversal
+* String manipulation
+
+### 🧠 Key Takeaways
+
+* Immutability is important to understand
+* Built-in methods simplify processing
+* String logic is widely used in real applications
+
+---
+
+## 📅 Day 8 — 29 December 2025
+
+### 🎯 Learning Goals
+
+* Understand **Object-Oriented Programming (OOP)**
+* Relate OOP with previous C# concepts
+
+### 📚 Introduction to OOP
+
+OOP structures programs using **classes and objects**, making code:
+
+* Modular
+* Reusable
+* Maintainable
+
+### 🔹 Core Concepts
+
+* Class
+* Object
+* Encapsulation
+* Abstraction
+
+### 🧠 Key Takeaways
+
+* OOP improves organization
+* Classes group data and logic
+* Solved scenario-based problems
+
+---
+
+## 📅 Day 9 — 30 December 2025
+
+### 🎯 Learning Goals
+
+* Understand **constructors**
+* Learn types of constructors
+* Understand objects and instances
+
+### 📚 Constructors Overview
+
+* Automatically called during object creation
+* Used to initialize data members
+
+### 🔹 Types
+
+* Default constructor
+* Parameterized constructor
+* Constructor overloading
+
+### 🧠 Key Takeaways
+
+* Ensures objects start in valid state
+* Improves clarity and safety
+
+---
+
+## 📅 Day 10 — 31 December 2025
+
+### 🎯 Learning Goals
+
+* Solve scenario-based problems
+* Learn important C# keywords
+
+### 🛠️ Scenarios Completed
+
+* **Bank Manager & Math Utility**
+* **Invoice Generator**
+
+### 📚 Concepts Learned
+
+* `this`
+* `static`
+* `sealed`
+* `is` operator
+
+### 🧠 Key Takeaways
+
+* Scenario-based practice improves logic
+* Strong understanding of core C# keywords
+
+---
+
+## 📅 Day 11 — 1 January 2026
+
+### 🎯 Learning Goals
+
+* Class vs Object
+* Basics of **UML diagrams**
+
+### 🛠️ Scenario: Cafeteria Menu
+
+* Used arrays for menu & price
+* Methods for:
+
+  * Display menu
+  * User choice
+  * Bill calculation
+
+### 🧠 Key Takeaways
+
+* UML improves design understanding
+* Arrays + methods = clean logic
+
+---
+
+## 📅 Day 12 — 2 January 2026
+
+### 🎯 Learning Goals
+
+* Understand **Inheritance**
+* Solve real-world scenarios
+
+### 🚌 Scenario 1: Bus Route Tracker
+
+* Stored stops, distances, passenger details
+* Calculated fare based on distance
+* Managed boarding & deboarding
+
+### 🎲 Scenario 2: Lucky Draw System
+
+* Stored participants
+* Generated random winner
+* Displayed results
+
+### 🧠 Key Takeaways
+
+* Inheritance improves reusability
+* Arrays manage related data efficiently
+* Control flow drives real-world simulations
+
+
