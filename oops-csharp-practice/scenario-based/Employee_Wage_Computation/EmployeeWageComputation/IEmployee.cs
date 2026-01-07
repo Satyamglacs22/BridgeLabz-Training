@@ -1,0 +1,11 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+namespace Employee_Wage_Computation.EmployeeWageComputation
+{
+    public interface IEmployee
+    {
+        Employee AddEmployee(int id, string name);
+        void CheckAttendance(Employee employee); // UC-1
+    }
+}
