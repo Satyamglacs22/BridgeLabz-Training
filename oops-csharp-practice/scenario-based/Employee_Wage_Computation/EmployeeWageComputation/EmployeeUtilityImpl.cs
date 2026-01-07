@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-using System;
-
 namespace Employee_Wage_Computation.EmployeeWageComputation
 {
     public class EmployeeUtilityImpl : IEmployee
     {
-        private Random random = new Random();
         private const int WAGE_PER_HOUR = 20;
         private const int FULL_DAY_HOURS = 8;
+        private const int PART_TIME_HOURS = 4;
+
+        private Random random = new Random();
 
         public Employee AddEmployee(int id, string name)
         {
@@ -20,32 +20,39 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
             return emp;
         }
 
-        // UC-1 implementation
+        // UC-1
         public void CheckAttendance(Employee employee)
         {
-            int attendance = random.Next(0, 2);
+            // 0 = Absent, 1 = Full Time, 2 = Part Time
+            int attendance = random.Next(0, 3);
             employee.Attendance = attendance;
 
             if (attendance == 1)
-                Console.WriteLine($"Employee {employee.Name} is Present");
+                Console.WriteLine($"{employee.Name} is Present (Full Time)");
+            else if (attendance == 2)
+                Console.WriteLine($"{employee.Name} is Present (Part Time)");
             else
-                Console.WriteLine($"Employee {employee.Name} is Absent");
+                Console.WriteLine($"{employee.Name} is Absent");
         }
 
-        // UC-2
+        // UC-2 (Full Day Wage)
         public void CalculateDailyWage(Employee employee)
         {
             if (employee.Attendance == 1)
             {
                 employee.DailyWage = WAGE_PER_HOUR * FULL_DAY_HOURS;
+                Console.WriteLine($"Full Day Wage: {employee.DailyWage}");
             }
-            else
-            {
-                employee.DailyWage = 0;
-            }
+        }
 
-            Console.WriteLine($"Daily Wage: {employee.DailyWage}");
+        // UC-3 (Part Time Wage)
+        public void CalculatePartTimeWage(Employee employee)
+        {
+            if (employee.Attendance == 2)
+            {
+                employee.DailyWage = WAGE_PER_HOUR * PART_TIME_HOURS;
+                Console.WriteLine($"Part Time Wage: {employee.DailyWage}");
+            }
         }
     }
 }
-
