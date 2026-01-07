@@ -9,6 +9,8 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
     public class EmployeeUtilityImpl : IEmployee
     {
         private Random random = new Random();
+        private const int WAGE_PER_HOUR = 20;
+        private const int FULL_DAY_HOURS = 8;
 
         public Employee AddEmployee(int id, string name)
         {
@@ -28,6 +30,21 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
                 Console.WriteLine($"Employee {employee.Name} is Present");
             else
                 Console.WriteLine($"Employee {employee.Name} is Absent");
+        }
+
+        // UC-2
+        public void CalculateDailyWage(Employee employee)
+        {
+            if (employee.Attendance == 1)
+            {
+                employee.DailyWage = WAGE_PER_HOUR * FULL_DAY_HOURS;
+            }
+            else
+            {
+                employee.DailyWage = 0;
+            }
+
+            Console.WriteLine($"Daily Wage: {employee.DailyWage}");
         }
     }
 }

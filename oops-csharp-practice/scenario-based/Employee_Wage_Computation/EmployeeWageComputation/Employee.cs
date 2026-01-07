@@ -10,6 +10,8 @@ namespace Employee_Wage_Computation.EmployeeWageComputation {
         private double employeeSalary;
         private int attendance; // UC-1
 
+        private double dailyWage; // UC-2
+
         public int EmployeeId
         {
             get { return employeeId; }
@@ -32,6 +34,11 @@ namespace Employee_Wage_Computation.EmployeeWageComputation {
         {
             get { return attendance; }
             set { attendance = value; }
+        }
+        public double DailyWage
+        {
+            get { return dailyWage; }
+            set { dailyWage = value; }
         }
     }
 }

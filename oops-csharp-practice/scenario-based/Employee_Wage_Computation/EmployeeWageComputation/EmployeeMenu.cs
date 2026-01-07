@@ -29,7 +29,11 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
 
                 // UC-1 applied
                 service.CheckAttendance(employee);
-            
+
+
+               // UC-2
+              service.CalculateDailyWage(employee);
+
         }
     }
 

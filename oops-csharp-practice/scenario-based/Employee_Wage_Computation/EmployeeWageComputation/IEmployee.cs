@@ -7,5 +7,7 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
     {
         Employee AddEmployee(int id, string name);
         void CheckAttendance(Employee employee); // UC-1
+
+        void CalculateDailyWage(Employee employee);  // UC-2
     }
 }
