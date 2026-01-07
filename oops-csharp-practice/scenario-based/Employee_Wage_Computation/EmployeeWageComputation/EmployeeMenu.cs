@@ -27,16 +27,19 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
             employee = service.AddEmployee(id, name);
 
             // UC-1
-            service.CheckAttendance(employee);
+            //service.CheckAttendance(employee);
 
             // UC-2
-            service.CalculateDailyWage(employee);
+            //service.CalculateDailyWage(employee);
 
             // UC-3
-            service.CalculatePartTimeWage(employee);
+            //service.CalculatePartTimeWage(employee);
 
-            // UC-4 (optimized wage calculation)
-            service.CalculateDailyWageUsingSwitch(employee);
+            // UC-4 
+            //service.CalculateDailyWageUsingSwitch(employee);
+
+            // UC-5 
+            service.CalculateMonthlyWage(employee);
 
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();

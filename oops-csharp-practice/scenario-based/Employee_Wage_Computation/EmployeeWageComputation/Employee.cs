@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Employee_Wage_Computation.EmployeeWageComputation { 
+namespace Employee_Wage_Computation.EmployeeWageComputation
+{
     public class Employee
     {
         private int employeeId;
         private string name;
-        private double employeeSalary;
-        private int attendance; // UC-1
-
-        private double dailyWage; // UC-2
+        private int attendance;
+        private double dailyWage;
+        private double monthlyWage;
+        private int workingDays;
 
         public int EmployeeId
         {
@@ -24,21 +25,28 @@ namespace Employee_Wage_Computation.EmployeeWageComputation {
             set { name = value; }
         }
 
-        public double EmployeeSalary
-        {
-            get { return employeeSalary; }
-            set { employeeSalary = value; }
-        }
-
         public int Attendance
         {
             get { return attendance; }
             set { attendance = value; }
         }
+
         public double DailyWage
         {
             get { return dailyWage; }
             set { dailyWage = value; }
+        }
+
+        public double MonthlyWage
+        {
+            get { return monthlyWage; }
+            set { monthlyWage = value; }
+        }
+
+        public int WorkingDays
+        {
+            get { return workingDays; }
+            set { workingDays = value; }
         }
     }
 }

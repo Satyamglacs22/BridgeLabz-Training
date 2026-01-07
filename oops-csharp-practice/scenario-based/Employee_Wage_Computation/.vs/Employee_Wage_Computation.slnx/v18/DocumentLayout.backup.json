@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|solutionrelative:employeewagecomputation\\employeemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\employee_wage_computation\\employeewagecomputation\\employeeutilityimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|solutionrelative:employeewagecomputation\\employeeutilityimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\employee_wage_computation\\employeewagecomputation\\iemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|solutionrelative:employeewagecomputation\\iemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\employee_wage_computation\\employeewagecomputation\\employeemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|solutionrelative:employeewagecomputation\\employeemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\employee_wage_computation\\employeewagecomputation\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|solutionrelative:employeewagecomputation\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\employee_wage_computation\\employeewagecomputation\\employeeutilityimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|solutionrelative:employeewagecomputation\\employeeutilityimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\employee_wage_computation\\employeewagecomputation\\iemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|solutionrelative:employeewagecomputation\\iemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F4DA73A-1521-8640-2262-01E763580588}|Employee_Wage_Computation.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\employee_wage_computation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,15 +34,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "EmployeeMain.cs",
               "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Employee_Wage_Computation\\EmployeeWageComputation\\EmployeeMain.cs",
               "RelativeDocumentMoniker": "EmployeeWageComputation\\EmployeeMain.cs",
@@ -50,7 +54,8 @@
               "RelativeToolTip": "EmployeeWageComputation\\EmployeeMain.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T11:26:21.258Z"
+              "WhenOpened": "2026-01-07T11:26:21.258Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,32 +65,32 @@
               "RelativeDocumentMoniker": "EmployeeWageComputation\\EmployeeMenu.cs",
               "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Employee_Wage_Computation\\EmployeeWageComputation\\EmployeeMenu.cs*",
               "RelativeToolTip": "EmployeeWageComputation\\EmployeeMenu.cs*",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCYAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAnwCYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-07T11:25:41.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "EmployeeUtilityImpl.cs",
               "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Employee_Wage_Computation\\EmployeeWageComputation\\EmployeeUtilityImpl.cs",
               "RelativeDocumentMoniker": "EmployeeWageComputation\\EmployeeUtilityImpl.cs",
-              "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Employee_Wage_Computation\\EmployeeWageComputation\\EmployeeUtilityImpl.cs*",
-              "RelativeToolTip": "EmployeeWageComputation\\EmployeeUtilityImpl.cs*",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Employee_Wage_Computation\\EmployeeWageComputation\\EmployeeUtilityImpl.cs",
+              "RelativeToolTip": "EmployeeWageComputation\\EmployeeUtilityImpl.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAkwF8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-07T11:24:04.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "IEmployee.cs",
               "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Employee_Wage_Computation\\EmployeeWageComputation\\IEmployee.cs",
               "RelativeDocumentMoniker": "EmployeeWageComputation\\IEmployee.cs",
-              "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Employee_Wage_Computation\\EmployeeWageComputation\\IEmployee.cs*",
-              "RelativeToolTip": "EmployeeWageComputation\\IEmployee.cs*",
+              "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Employee_Wage_Computation\\EmployeeWageComputation\\IEmployee.cs",
+              "RelativeToolTip": "EmployeeWageComputation\\IEmployee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-07T11:23:20.792Z",
@@ -93,15 +98,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Employee_Wage_Computation\\EmployeeWageComputation\\Employee.cs",
               "RelativeDocumentMoniker": "EmployeeWageComputation\\Employee.cs",
               "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Employee_Wage_Computation\\EmployeeWageComputation\\Employee.cs",
               "RelativeToolTip": "EmployeeWageComputation\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T11:22:22.57Z"
+              "WhenOpened": "2026-01-07T11:22:22.57Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -114,10 +120,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-07T11:20:42.81Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             }
           ]
         }
