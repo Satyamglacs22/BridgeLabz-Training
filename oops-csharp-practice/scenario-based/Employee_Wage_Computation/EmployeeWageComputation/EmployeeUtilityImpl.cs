@@ -23,19 +23,17 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
         // UC-1
         public void CheckAttendance(Employee employee)
         {
-            // 0 = Absent, 1 = Full Time, 2 = Part Time
-            int attendance = random.Next(0, 3);
+            int attendance = random.Next(0, 3); // 0,1,2
             employee.Attendance = attendance;
 
-            if (attendance == 1)
-                Console.WriteLine($"{employee.Name} is Present (Full Time)");
-            else if (attendance == 2)
-                Console.WriteLine($"{employee.Name} is Present (Part Time)");
-            else
-                Console.WriteLine($"{employee.Name} is Absent");
+            Console.WriteLine(
+                attendance == 1 ? $"{employee.Name} is Present (Full Time)" :
+                attendance == 2 ? $"{employee.Name} is Present (Part Time)" :
+                                  $"{employee.Name} is Absent"
+            );
         }
 
-        // UC-2 (Full Day Wage)
+        // UC-2
         public void CalculateDailyWage(Employee employee)
         {
             if (employee.Attendance == 1)
@@ -45,7 +43,7 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
             }
         }
 
-        // UC-3 (Part Time Wage)
+        // UC-3
         public void CalculatePartTimeWage(Employee employee)
         {
             if (employee.Attendance == 2)
@@ -53,6 +51,30 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
                 employee.DailyWage = WAGE_PER_HOUR * PART_TIME_HOURS;
                 Console.WriteLine($"Part Time Wage: {employee.DailyWage}");
             }
+        }
+
+        // ✅ UC-4: Switch Case Implementation
+        public void CalculateDailyWageUsingSwitch(Employee employee)
+        {
+            int workHours = 0;
+
+            switch (employee.Attendance)
+            {
+                case 1: // Full Time
+                    workHours = FULL_DAY_HOURS;
+                    break;
+
+                case 2: // Part Time
+                    workHours = PART_TIME_HOURS;
+                    break;
+
+                default: // Absent
+                    workHours = 0;
+                    break;
+            }
+
+            employee.DailyWage = workHours * WAGE_PER_HOUR;
+            Console.WriteLine($"Daily Wage (Switch Case): {employee.DailyWage}");
         }
     }
 }

@@ -35,6 +35,9 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
             // UC-3
             service.CalculatePartTimeWage(employee);
 
+            // UC-4 (optimized wage calculation)
+            service.CalculateDailyWageUsingSwitch(employee);
+
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
