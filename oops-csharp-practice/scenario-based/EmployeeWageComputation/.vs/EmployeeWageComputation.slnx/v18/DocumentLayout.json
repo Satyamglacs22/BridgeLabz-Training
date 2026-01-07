@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\EmployeeWageComputation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDEAD1E1-3CA0-E5C9-5D4F-95C4DF98DB79}|EmployeeWageComputation.csproj|d:\\employeewagecomputation\\employeemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDEAD1E1-3CA0-E5C9-5D4F-95C4DF98DB79}|EmployeeWageComputation.csproj|solutionrelative:employeemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDEAD1E1-3CA0-E5C9-5D4F-95C4DF98DB79}|EmployeeWageComputation.csproj|d:\\employeewagecomputation\\employeeutilityimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDEAD1E1-3CA0-E5C9-5D4F-95C4DF98DB79}|EmployeeWageComputation.csproj|solutionrelative:employeeutilityimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDEAD1E1-3CA0-E5C9-5D4F-95C4DF98DB79}|EmployeeWageComputation.csproj|d:\\employeewagecomputation\\iemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDEAD1E1-3CA0-E5C9-5D4F-95C4DF98DB79}|EmployeeWageComputation.csproj|solutionrelative:iemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDEAD1E1-3CA0-E5C9-5D4F-95C4DF98DB79}|EmployeeWageComputation.csproj|d:\\employeewagecomputation\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDEAD1E1-3CA0-E5C9-5D4F-95C4DF98DB79}|EmployeeWageComputation.csproj|solutionrelative:employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDEAD1E1-3CA0-E5C9-5D4F-95C4DF98DB79}|EmployeeWageComputation.csproj|d:\\employeewagecomputation\\employeemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDEAD1E1-3CA0-E5C9-5D4F-95C4DF98DB79}|EmployeeWageComputation.csproj|solutionrelative:employeemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDEAD1E1-3CA0-E5C9-5D4F-95C4DF98DB79}|EmployeeWageComputation.csproj|d:\\employeewagecomputation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDEAD1E1-3CA0-E5C9-5D4F-95C4DF98DB79}|EmployeeWageComputation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeMain.cs",
+              "DocumentMoniker": "D:\\EmployeeWageComputation\\EmployeeMain.cs",
+              "RelativeDocumentMoniker": "EmployeeMain.cs",
+              "ToolTip": "D:\\EmployeeWageComputation\\EmployeeMain.cs",
+              "RelativeToolTip": "EmployeeMain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T06:37:14.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeMenu.cs",
+              "DocumentMoniker": "D:\\EmployeeWageComputation\\EmployeeMenu.cs",
+              "RelativeDocumentMoniker": "EmployeeMenu.cs",
+              "ToolTip": "D:\\EmployeeWageComputation\\EmployeeMenu.cs",
+              "RelativeToolTip": "EmployeeMenu.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T06:34:09.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeUtilityImpl.cs",
+              "DocumentMoniker": "D:\\EmployeeWageComputation\\EmployeeUtilityImpl.cs",
+              "RelativeDocumentMoniker": "EmployeeUtilityImpl.cs",
+              "ToolTip": "D:\\EmployeeWageComputation\\EmployeeUtilityImpl.cs",
+              "RelativeToolTip": "EmployeeUtilityImpl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T06:29:17.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IEmployee.cs",
+              "DocumentMoniker": "D:\\EmployeeWageComputation\\IEmployee.cs",
+              "RelativeDocumentMoniker": "IEmployee.cs",
+              "ToolTip": "D:\\EmployeeWageComputation\\IEmployee.cs",
+              "RelativeToolTip": "IEmployee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T06:26:29.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\EmployeeWageComputation\\Employee.cs",
+              "RelativeDocumentMoniker": "Employee.cs",
+              "ToolTip": "D:\\EmployeeWageComputation\\Employee.cs",
+              "RelativeToolTip": "Employee.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T06:02:19.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\EmployeeWageComputation\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\EmployeeWageComputation\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T06:01:39.528Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
