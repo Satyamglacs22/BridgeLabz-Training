@@ -18,31 +18,52 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program");
 
-            Console.WriteLine("Enter Employee Id:");
+            Console.Write("Enter Employee Id: ");
             int id = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter Employee Name:");
+            Console.Write("Enter Employee Name: ");
             string name = Console.ReadLine();
 
             employee = service.AddEmployee(id, name);
 
-            // UC-1
-            //service.CheckAttendance(employee);
+            bool exit = false;
 
-            // UC-2
-            //service.CalculateDailyWage(employee);
+            while (!exit)
+            {
+                Console.WriteLine("\nSelect Use Case:");
+                Console.WriteLine("1. UC-4 : Daily Wage using Switch Case");
+                Console.WriteLine("2. UC-5 : Monthly Wage (Random Working Days)");
+                Console.WriteLine("3. UC-6 : Wage till 100 Hours or 20 Days");
+                Console.WriteLine("4. Exit");
 
-            // UC-3
-            //service.CalculatePartTimeWage(employee);
+                int choice = int.Parse(Console.ReadLine());
 
-            // UC-4 
-            //service.CalculateDailyWageUsingSwitch(employee);
+                switch (choice)
+                {
+                    case 1:
+                        service.CheckAttendance(employee);
+                        service.CalculateDailyWageUsingSwitch(employee);
+                        break;
 
-            // UC-5 
-            service.CalculateMonthlyWage(employee);
+                    case 2:
+                        service.CalculateMonthlyWage(employee);
+                        break;
 
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadKey();
+                    case 3:
+                        service.CalculateWageWithCondition(employee);
+                        break;
+
+                    case 4:
+                        exit = true;
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid Choice");
+                        break;
+                }
+            }
+
+            Console.WriteLine("Program Ended");
         }
     }
 }

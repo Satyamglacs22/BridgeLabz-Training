@@ -12,6 +12,7 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
         private double dailyWage;
         private double monthlyWage;
         private int workingDays;
+        private int totalWorkingHours;   // UC-6
 
         public int EmployeeId
         {
@@ -47,6 +48,12 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
         {
             get { return workingDays; }
             set { workingDays = value; }
+        }
+
+        public int TotalWorkingHours
+        {
+            get { return totalWorkingHours; }
+            set { totalWorkingHours = value; }
         }
     }
 }

@@ -9,6 +9,8 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
         private const int WAGE_PER_HOUR = 20;
         private const int FULL_DAY_HOURS = 8;
         private const int PART_TIME_HOURS = 4;
+        private const int MAX_DAYS = 20;
+        private const int MAX_HOURS = 100;
 
         private Random random = new Random();
 
@@ -20,10 +22,10 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
             return emp;
         }
 
-        // UC1
+        // UC-1
         public void CheckAttendance(Employee employee)
         {
-            int attendance = random.Next(0, 3); // 0-Absent,1-Full,2-Part
+            int attendance = random.Next(0, 3); // 0-Absent, 1-Full, 2-Part
             employee.Attendance = attendance;
 
             if (attendance == 1)
@@ -34,7 +36,7 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
                 Console.WriteLine("Absent");
         }
 
-        // UC2 + UC3 (IF-ELSE)
+        // UC-2 + UC-3
         public void CalculateDailyWage(Employee employee)
         {
             if (employee.Attendance == 1)
@@ -43,11 +45,9 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
                 employee.DailyWage = WAGE_PER_HOUR * PART_TIME_HOURS;
             else
                 employee.DailyWage = 0;
-
-            Console.WriteLine("Daily Wage: " + employee.DailyWage);
         }
 
-        // UC4 (Switch Case)
+        // UC-4
         public void CalculateDailyWageUsingSwitch(Employee employee)
         {
             int workHours;
@@ -66,30 +66,63 @@ namespace Employee_Wage_Computation.EmployeeWageComputation
             }
 
             employee.DailyWage = workHours * WAGE_PER_HOUR;
-            Console.WriteLine("Daily Wage (Switch): " + employee.DailyWage);
         }
 
-        // UC5 (Monthly Wage with Random Days 1–23)
+        // UC-5
         public void CalculateMonthlyWage(Employee employee)
         {
             int daysWorked = random.Next(1, 24);
-            employee.WorkingDays = daysWorked;
-
             double totalWage = 0;
-
-            Console.WriteLine("\nEmployee worked for " + daysWorked + " days\n");
 
             for (int day = 1; day <= daysWorked; day++)
             {
-                Console.WriteLine("Day " + day);
                 CheckAttendance(employee);
                 CalculateDailyWageUsingSwitch(employee);
                 totalWage += employee.DailyWage;
-                Console.WriteLine();
             }
 
             employee.MonthlyWage = totalWage;
-            Console.WriteLine("Total Monthly Wage: " + employee.MonthlyWage);
+        }
+
+        // ✅ UC-6: Condition based wage calculation
+        public void CalculateWageWithCondition(Employee employee)
+        {
+            int totalDays = 0;
+            int totalHours = 0;
+            double totalWage = 0;
+
+            Console.WriteLine("\nUC-6 Wage Calculation Started\n");
+
+            while (totalDays < MAX_DAYS && totalHours < MAX_HOURS)
+            {
+                totalDays++;
+                Console.WriteLine("Day " + totalDays);
+
+                CheckAttendance(employee);
+
+                int workHours;
+                if (employee.Attendance == 1)
+                    workHours = FULL_DAY_HOURS;
+                else if (employee.Attendance == 2)
+                    workHours = PART_TIME_HOURS;
+                else
+                    workHours = 0;
+
+                totalHours += workHours;
+                totalWage += workHours * WAGE_PER_HOUR;
+
+                Console.WriteLine("Work Hours: " + workHours);
+                Console.WriteLine("Total Hours so far: " + totalHours);
+                Console.WriteLine();
+            }
+
+            employee.WorkingDays = totalDays;
+            employee.TotalWorkingHours = totalHours;
+            employee.MonthlyWage = totalWage;
+
+            Console.WriteLine("Final Working Days: " + totalDays);
+            Console.WriteLine("Final Working Hours: " + totalHours);
+            Console.WriteLine("Total Wage (UC-6): " + totalWage);
         }
     }
 }
