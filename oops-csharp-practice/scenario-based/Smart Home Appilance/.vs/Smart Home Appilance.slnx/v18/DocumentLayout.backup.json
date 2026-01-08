@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\smart home appilance\\smarthomeutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|solutionrelative:smarthomeutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\smart home appilance\\smarthomemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|solutionrelative:smarthomemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\smart home appilance\\appliance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|solutionrelative:appliance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\smart home appilance\\light.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|solutionrelative:light.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\smart home appilance\\ac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|solutionrelative:ac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\smart home appilance\\fan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|solutionrelative:fan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\smart home appilance\\icontrollable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|solutionrelative:icontrollable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\smart home appilance\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CD0EE6A-92C1-4D12-A94E-9E52B2EDA7A7}|Smart Home Appilance.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SmartHomeMain.cs",
+              "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\SmartHomeMain.cs",
+              "RelativeDocumentMoniker": "SmartHomeMain.cs",
+              "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\SmartHomeMain.cs",
+              "RelativeToolTip": "SmartHomeMain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T05:58:19.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SmartHomeUtility.cs",
+              "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\SmartHomeUtility.cs",
+              "RelativeDocumentMoniker": "SmartHomeUtility.cs",
+              "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\SmartHomeUtility.cs",
+              "RelativeToolTip": "SmartHomeUtility.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T05:40:02.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Light.cs",
+              "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\Light.cs",
+              "RelativeDocumentMoniker": "Light.cs",
+              "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\Light.cs",
+              "RelativeToolTip": "Light.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T05:34:03.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ac.cs",
+              "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\Ac.cs",
+              "RelativeDocumentMoniker": "Ac.cs",
+              "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\Ac.cs",
+              "RelativeToolTip": "Ac.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T05:31:54.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Fan.cs",
+              "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\Fan.cs",
+              "RelativeDocumentMoniker": "Fan.cs",
+              "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\Fan.cs",
+              "RelativeToolTip": "Fan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T05:28:56.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Appliance.cs",
+              "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\Appliance.cs",
+              "RelativeDocumentMoniker": "Appliance.cs",
+              "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\Appliance.cs",
+              "RelativeToolTip": "Appliance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T05:24:49.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IControllable.cs",
+              "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\IControllable.cs",
+              "RelativeDocumentMoniker": "IControllable.cs",
+              "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\IControllable.cs",
+              "RelativeToolTip": "IControllable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T05:23:40.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\Smart Home Appilance\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T05:19:36.635Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
