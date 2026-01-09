@@ -1,0 +1,16 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+.vscode/
+
+# Debug / Release
+Debug/
+Release/
+
+# Executables
+*.exe
+*.dll
+*.pdb
