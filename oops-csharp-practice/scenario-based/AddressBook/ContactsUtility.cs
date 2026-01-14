@@ -4,23 +4,21 @@ using System.Text;
 
 namespace AddressBook
 {
-    internal class ContactsUtility:IContact
+    internal class ContactsUtility : IContact
     {
-
-        private List<Contacts> contact = new List<Contacts>();
-        
+        private List<Contacts> contactList = new List<Contacts>();
 
         public void AddSingleContact()
         {
             Console.WriteLine("Enter the Number Of Contacts You Want to Add");
-           
+            int count = int.Parse(Console.ReadLine());
 
-            for(int i = 0; i < 1; i++)
+            for (int i = 0; i < count; i++)
             {
-                Console.WriteLine("Enter FirstName");
+                Console.WriteLine("Enter First Name");
                 string firstName = Console.ReadLine();
 
-                Console.WriteLine("Enter LastName");
+                Console.WriteLine("Enter Last Name");
                 string lastName = Console.ReadLine();
 
                 Console.WriteLine("Enter Address");
@@ -38,11 +36,66 @@ namespace AddressBook
                 Console.WriteLine("Enter Email");
                 string email = Console.ReadLine();
 
-                Contacts contacts = new Contacts (firstName, lastName, address, city, zip, phoneNumber, email);
-                contact.Add(contacts);
+                Contacts contact = new Contacts(
+                    firstName,
+                    lastName,
+                    address,
+                    city,
+                    zip,
+                    phoneNumber,
+                    email
+                );
 
-                Console.WriteLine("Contact Added Successfully");
+                contactList.Add(contact);
+                Console.WriteLine("Contact Added Successfully\n");
+            }
+        }
 
+        public void UpdateContact()
+        {
+            if (contactList.Count == 0)
+            {
+                Console.WriteLine("No contacts available. Please add contacts first.");
+                return;
+            }
+
+            Console.WriteLine("Enter First Name of Contact to Update");
+            string fName = Console.ReadLine();
+
+            Console.WriteLine("Enter Last Name of Contact to Update");
+            string lName = Console.ReadLine();
+
+            bool found = false;
+
+            for (int i = 0; i < contactList.Count; i++)
+            {
+                if (contactList[i].FirstName.Equals(fName, StringComparison.OrdinalIgnoreCase) &&
+                    contactList[i].LastName.Equals(lName, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Enter New Address");
+                    contactList[i].Address = Console.ReadLine();
+
+                    Console.WriteLine("Enter New City");
+                    contactList[i].City = Console.ReadLine();
+
+                    Console.WriteLine("Enter New ZIP");
+                    contactList[i].Zip = Console.ReadLine();
+
+                    Console.WriteLine("Enter New Phone Number");
+                    contactList[i].PhoneNumber = Console.ReadLine();
+
+                    Console.WriteLine("Enter New Email");
+                    contactList[i].Email = Console.ReadLine();
+
+                    Console.WriteLine("Contact Updated Successfully");
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found)
+            {
+                Console.WriteLine("Contact Not Found");
             }
         }
     }

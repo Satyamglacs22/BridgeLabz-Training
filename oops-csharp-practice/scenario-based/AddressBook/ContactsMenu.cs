@@ -15,7 +15,9 @@ namespace AddressBook
             while (!found)
             {
                 Console.WriteLine("Enter 1 to Add Single Contact");
-                Console.WriteLine("Enter 2 to Exit");
+                Console.WriteLine("Enter 2 to Update Existing Contact");
+                Console.WriteLine("Enter 3 to Exit");
+               
                 Console.WriteLine("Enter Choice");
 
                 int choice = int.Parse(Console.ReadLine());
@@ -27,6 +29,10 @@ namespace AddressBook
                         break;
 
                     case 2:
+                        cu.UpdateContact();
+                        break;
+
+                    case 3:
                         found = true;
                         Console.WriteLine("Exiting Address Book...");
                         break;

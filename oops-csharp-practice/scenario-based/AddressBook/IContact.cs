@@ -7,5 +7,6 @@ namespace AddressBook
      interface IContact
     {
         void AddSingleContact();
+        void UpdateContact();
     }
 }
