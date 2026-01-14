@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AddressBook
 {
@@ -10,16 +8,58 @@ namespace AddressBook
 
         public void ShowMenu()
         {
-            bool found = false;
+            bool exit = false;
 
-            while (!found)
+            while (!exit)
             {
-                Console.WriteLine("Enter 1 to Add Single Contact");
-                Console.WriteLine("Enter 2 to Update Existing Contact");
-                Console.WriteLine("Enter 3 to Delete Contact");
-                Console.WriteLine("Enter 4 to Add Multiple Contact");
-                Console.WriteLine("Enter 5 to Exit");
-               
+                Console.WriteLine("\n===== ADDRESS BOOK MENU =====");
+                Console.WriteLine("1. Create  Address Books");
+                Console.WriteLine("2. Select Address Book");
+                Console.WriteLine("3. Exit");
+                Console.WriteLine("Enter Choice");
+
+                int choice = int.Parse(Console.ReadLine());
+
+                switch (choice)
+                {
+                    case 1:
+                       cu.CreateAddressBooks();
+                        break;
+
+                    case 2:
+                        bool selected = cu.SelectAddressBook();
+                        if (selected)
+                        {
+                            ShowContactMenu();
+                        }
+                        break;
+
+                    case 3:
+                        exit = true;
+                        Console.WriteLine("Exiting Address Book System...");
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid Choice");
+                        break;
+                }
+            }
+        }
+
+       
+
+        private void ShowContactMenu()
+        {
+            bool back = false;
+
+            while (!back)
+            {
+                Console.WriteLine("\n----- CONTACT OPERATIONS (Selected Address Book) -----");
+                Console.WriteLine("1. Add Single Contact");
+                Console.WriteLine("2. Update Contact");
+                Console.WriteLine("3. Delete Contact");
+                Console.WriteLine("4. Add Multiple Contacts");
+                Console.WriteLine("5. Back to Address Book Menu");
                 Console.WriteLine("Enter Choice");
 
                 int choice = int.Parse(Console.ReadLine());
@@ -37,17 +77,17 @@ namespace AddressBook
                     case 3:
                         cu.DeleteContact();
                         break;
+
                     case 4:
                         cu.AddMultipleContact();
                         break;
 
                     case 5:
-                        found = true;
-                        Console.WriteLine("Exiting Address Book...");
+                        back = true;
                         break;
 
                     default:
-                        Console.WriteLine("Invalid Choice. Try Again.");
+                        Console.WriteLine("Invalid Choice");
                         break;
                 }
             }

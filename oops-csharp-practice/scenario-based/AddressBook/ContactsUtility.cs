@@ -6,176 +6,209 @@ namespace AddressBook
 {
     internal class ContactsUtility : IContact
     {
-        private List<Contacts> contactList = new List<Contacts>();
+        // ===== AddressBook level (ARRAY instead of LIST) =====
+        private Contacts[][] addressBooks;
+        private string[] addressBookNames;
+        private int addressBookCount = 0;
+
+        // Selected AddressBook
+        private Contacts[] contactList = null;
+        private int contactCount = 0;
+
+        // ================= ADDRESS BOOK =================
+
+        public void CreateAddressBooks()
+        {
+            Console.WriteLine("How many Address Books do you want to create?");
+            int count = int.Parse(Console.ReadLine());
+
+            addressBooks = new Contacts[count][];
+            addressBookNames = new string[count];
+
+            for (int i = 0; i < count; i++)
+            {
+                AddAddressBook();
+            }
+        }
+
+        public void AddAddressBook()
+        {
+            Console.WriteLine("Enter Address Book Name");
+            string name = Console.ReadLine();
+
+            for (int i = 0; i < addressBookCount; i++)
+            {
+                if (addressBookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Address Book already exists");
+                    return;
+                }
+            }
+
+            addressBookNames[addressBookCount] = name;
+            addressBooks[addressBookCount] = new Contacts[100]; // max 100 contacts
+            addressBookCount++;
+
+            Console.WriteLine("Address Book Created Successfully");
+        }
+
+        public bool SelectAddressBook()
+        {
+            Console.WriteLine("Enter Address Book Name");
+            string name = Console.ReadLine();
+
+            for (int i = 0; i < addressBookCount; i++)
+            {
+                if (addressBookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    contactList = addressBooks[i];
+                    contactCount = GetContactCount(contactList);
+                    Console.WriteLine("Address Book Selected Successfully");
+                    return true;
+                }
+            }
+
+            Console.WriteLine("Address Book Not Found");
+            return false;
+        }
+
+        private bool IsAddressBookSelected()
+        {
+            if (contactList == null)
+            {
+                Console.WriteLine("Please select an Address Book first");
+                return false;
+            }
+            return true;
+        }
+
+        // ================= CONTACT OPERATIONS =================
 
         public void AddSingleContact()
         {
-           
+            if (!IsAddressBookSelected()) return;
 
-            
-                Console.WriteLine("Enter First Name");
-                string firstName = Console.ReadLine();
+            Console.WriteLine("Enter First Name");
+            string firstName = Console.ReadLine();
 
-                Console.WriteLine("Enter Last Name");
-                string lastName = Console.ReadLine();
+            Console.WriteLine("Enter Last Name");
+            string lastName = Console.ReadLine();
 
-                Console.WriteLine("Enter Address");
-                string address = Console.ReadLine();
+            Console.WriteLine("Enter Address");
+            string address = Console.ReadLine();
 
-                Console.WriteLine("Enter City");
-                string city = Console.ReadLine();
+            Console.WriteLine("Enter City");
+            string city = Console.ReadLine();
 
-                Console.WriteLine("Enter ZIP Code");
-                string zip = Console.ReadLine();
+            Console.WriteLine("Enter ZIP Code");
+            string zip = Console.ReadLine();
 
-                Console.WriteLine("Enter Phone Number");
-                string phoneNumber = Console.ReadLine();
+            Console.WriteLine("Enter Phone Number");
+            string phoneNumber = Console.ReadLine();
 
-                Console.WriteLine("Enter Email");
-                string email = Console.ReadLine();
+            Console.WriteLine("Enter Email");
+            string email = Console.ReadLine();
 
-                Contacts contact = new Contacts(
-                    firstName,
-                    lastName,
-                    address,
-                    city,
-                    zip,
-                    phoneNumber,
-                    email
-                );
+            contactList[contactCount++] = new Contacts(
+                firstName, lastName, address, city, zip, phoneNumber, email
+            );
 
-                contactList.Add(contact);
-                Console.WriteLine("Contact Added Successfully\n");
-            }
-        
-
-        public void UpdateContact()
-        {
-            if (contactList.Count == 0)
-            {
-                Console.WriteLine("No contacts available. Please add contacts first.");
-                return;
-            }
-
-            Console.WriteLine("Enter First Name of Contact to Update");
-            string fName = Console.ReadLine();
-
-            Console.WriteLine("Enter Last Name of Contact to Update");
-            string lName = Console.ReadLine();
-
-            bool found = false;
-
-            for (int i = 0; i < contactList.Count; i++)
-            {
-                if (contactList[i].FirstName.Equals(fName, StringComparison.OrdinalIgnoreCase) &&
-                    contactList[i].LastName.Equals(lName, StringComparison.OrdinalIgnoreCase))
-                {
-                    Console.WriteLine("Enter New Address");
-                    contactList[i].Address = Console.ReadLine();
-
-                    Console.WriteLine("Enter New City");
-                    contactList[i].City = Console.ReadLine();
-
-                    Console.WriteLine("Enter New ZIP");
-                    contactList[i].Zip = Console.ReadLine();
-
-                    Console.WriteLine("Enter New Phone Number");
-                    contactList[i].PhoneNumber = Console.ReadLine();
-
-                    Console.WriteLine("Enter New Email");
-                    contactList[i].Email = Console.ReadLine();
-
-                    Console.WriteLine("Contact Updated Successfully");
-                    found = true;
-                    break;
-                }
-            }
-
-            if (!found)
-            {
-                Console.WriteLine("Contact Not Found");
-            }
+            Console.WriteLine("Contact Added Successfully");
         }
-        public void DeleteContact()
 
-
-        {
-
-            if (contactList.Count == 0)
-            {
-                Console.WriteLine("No contacts available. Please add contacts first.");
-                return;
-            }
-            Console.WriteLine("Enter the Contact Name that You Want to Delete");
-            Console.WriteLine("Enter the First Name");
-            string fName = Console.ReadLine();
-
-            Console.WriteLine("Enter Last Name of Contact to Update");
-            string lName = Console.ReadLine();
-
-            bool found = false;
-
-            for (int i = 0; i < contactList.Count; i++)
-            {
-                if (contactList[i].FirstName.Equals(fName, StringComparison.OrdinalIgnoreCase) &&
-                    contactList[i].LastName.Equals(lName, StringComparison.OrdinalIgnoreCase))
-                {
-                    contactList.Remove(contactList[i]);
-
-                    Console.WriteLine("Contact Deleted Successfully");
-                    found = true;
-                    break;
-                }
-            }
-
-            if (!found)
-            {
-                Console.WriteLine("Contact Not Found");
-            }
-
-        }
         public void AddMultipleContact()
         {
-            Console.WriteLine("Enter the Number Of Contacts You Want to Add");
+            if (!IsAddressBookSelected()) return;
+
+            Console.WriteLine("Enter Number of Contacts");
             int count = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < count; i++)
             {
-                Console.WriteLine("Enter First Name");
-                string firstName = Console.ReadLine();
+                AddSingleContact();
+            }
+        }
 
-                Console.WriteLine("Enter Last Name");
-                string lastName = Console.ReadLine();
+        public void UpdateContact()
+        {
+            if (!IsAddressBookSelected()) return;
 
-                Console.WriteLine("Enter Address");
-                string address = Console.ReadLine();
-
-                Console.WriteLine("Enter City");
-                string city = Console.ReadLine();
-
-                Console.WriteLine("Enter ZIP Code");
-                string zip = Console.ReadLine();
-
-                Console.WriteLine("Enter Phone Number");
-                string phoneNumber = Console.ReadLine();
-
-                Console.WriteLine("Enter Email");
-                string email = Console.ReadLine();
-
-                Contacts contact = new Contacts(
-                    firstName,
-                    lastName,
-                    address,
-                    city,
-                    zip,
-                    phoneNumber,
-                    email
-                );
-
-                contactList.Add(contact);
-                Console.WriteLine("Contact Added Successfully\n");
+            if (contactCount == 0)
+            {
+                Console.WriteLine("No contacts available");
+                return;
             }
 
+            Console.WriteLine("Enter First Name to Update");
+            string fName = Console.ReadLine();
+
+            Console.WriteLine("Enter Last Name to Update");
+            string lName = Console.ReadLine();
+
+            for (int i = 0; i < contactCount; i++)
+            {
+                if (contactList[i].FirstName.Equals(fName, StringComparison.OrdinalIgnoreCase) &&
+                    contactList[i].LastName.Equals(lName, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Enter New City");
+                    contactList[i].City = Console.ReadLine();
+
+                    Console.WriteLine("Enter New Phone Number");
+                    contactList[i].PhoneNumber = Console.ReadLine();
+
+                    Console.WriteLine("Contact Updated Successfully");
+                    return;
+                }
+            }
+
+            Console.WriteLine("Contact Not Found");
+        }
+
+        public void DeleteContact()
+        {
+            if (!IsAddressBookSelected()) return;
+
+            if (contactCount == 0)
+            {
+                Console.WriteLine("No contacts available");
+                return;
+            }
+
+            Console.WriteLine("Enter First Name to Delete");
+            string fName = Console.ReadLine();
+
+            Console.WriteLine("Enter Last Name to Delete");
+            string lName = Console.ReadLine();
+
+            for (int i = 0; i < contactCount; i++)
+            {
+                if (contactList[i].FirstName.Equals(fName, StringComparison.OrdinalIgnoreCase) &&
+                    contactList[i].LastName.Equals(lName, StringComparison.OrdinalIgnoreCase))
+                {
+                    for (int j = i; j < contactCount - 1; j++)
+                    {
+                        contactList[j] = contactList[j + 1];
+                    }
+
+                    contactList[--contactCount] = null;
+                    Console.WriteLine("Contact Deleted Successfully");
+                    return;
+                }
+            }
+
+            Console.WriteLine("Contact Not Found");
+        }
+
+        // ================= HELPER =================
+        private int GetContactCount(Contacts[] list)
+        {
+            int count = 0;
+            for (int i = 0; i < list.Length; i++)
+            {
+                if (list[i] != null)
+                    count++;
+            }
+            return count;
         }
     }
 }
