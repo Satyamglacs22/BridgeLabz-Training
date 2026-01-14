@@ -10,5 +10,8 @@ namespace AddressBook
         void UpdateContact();
         void DeleteContact();
 
+        void AddMultipleContact();
+        
+
     }
 }
