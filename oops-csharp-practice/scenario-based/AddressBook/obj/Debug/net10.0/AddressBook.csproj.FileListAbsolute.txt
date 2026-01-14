@@ -1,0 +1,15 @@
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\obj\Debug\net10.0\AddressBook.GeneratedMSBuildEditorConfig.editorconfig
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\obj\Debug\net10.0\AddressBook.AssemblyInfoInputs.cache
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\obj\Debug\net10.0\AddressBook.AssemblyInfo.cs
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\obj\Debug\net10.0\AddressBook.csproj.CoreCompileInputs.cache
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\obj\Debug\net10.0\AddressBook.sourcelink.json
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\bin\Debug\net10.0\AddressBook.exe
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\bin\Debug\net10.0\AddressBook.deps.json
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\bin\Debug\net10.0\AddressBook.runtimeconfig.json
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\bin\Debug\net10.0\AddressBook.dll
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\bin\Debug\net10.0\AddressBook.pdb
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\obj\Debug\net10.0\AddressBook.dll
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\obj\Debug\net10.0\refint\AddressBook.dll
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\obj\Debug\net10.0\AddressBook.pdb
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\obj\Debug\net10.0\AddressBook.genruntimeconfig.cache
+D:\BridgeLabz-Training\oops-csharp-practice\scenario-based\AddressBook\obj\Debug\net10.0\ref\AddressBook.dll

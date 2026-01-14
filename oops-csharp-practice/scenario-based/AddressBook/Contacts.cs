@@ -13,7 +13,17 @@ namespace AddressBook
         private string zip;
         private string phoneNumber;
         private string email;
+         public Contacts(string firstName,string lastName, string address, string city, string zip, string phoneNumber, string email){
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.address = address;
+            this.city = city;
+            this.zip = zip;
+            this.phoneNumber = phoneNumber;
+            this.email = email;
 
+
+            }
         public string FirstName
         {
             get
