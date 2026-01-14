@@ -16,7 +16,8 @@ namespace AddressBook
             {
                 Console.WriteLine("Enter 1 to Add Single Contact");
                 Console.WriteLine("Enter 2 to Update Existing Contact");
-                Console.WriteLine("Enter 3 to Exit");
+                Console.WriteLine("Enter 3 to Delete Contact");
+                Console.WriteLine("Enter 4 to Exit");
                
                 Console.WriteLine("Enter Choice");
 
@@ -33,6 +34,10 @@ namespace AddressBook
                         break;
 
                     case 3:
+                        cu.DeleteContact();
+                        break;
+
+                    case 4:
                         found = true;
                         Console.WriteLine("Exiting Address Book...");
                         break;

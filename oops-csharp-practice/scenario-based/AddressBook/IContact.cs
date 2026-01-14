@@ -8,5 +8,7 @@ namespace AddressBook
     {
         void AddSingleContact();
         void UpdateContact();
+        void DeleteContact();
+
     }
 }

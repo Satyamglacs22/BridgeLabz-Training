@@ -98,5 +98,43 @@ namespace AddressBook
                 Console.WriteLine("Contact Not Found");
             }
         }
+        public void DeleteContact()
+
+
+        {
+
+            if (contactList.Count == 0)
+            {
+                Console.WriteLine("No contacts available. Please add contacts first.");
+                return;
+            }
+            Console.WriteLine("Enter the Contact Name that You Want to Delete");
+            Console.WriteLine("Enter the First Name");
+            string fName = Console.ReadLine();
+
+            Console.WriteLine("Enter Last Name of Contact to Update");
+            string lName = Console.ReadLine();
+
+            bool found = false;
+
+            for (int i = 0; i < contactList.Count; i++)
+            {
+                if (contactList[i].FirstName.Equals(fName, StringComparison.OrdinalIgnoreCase) &&
+                    contactList[i].LastName.Equals(lName, StringComparison.OrdinalIgnoreCase))
+                {
+                    contactList.Remove(contactList[i]);
+
+                    Console.WriteLine("Contact Deleted Successfully");
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found)
+            {
+                Console.WriteLine("Contact Not Found");
+            }
+
+        }
     }
 }
