@@ -13,9 +13,10 @@ namespace AddressBook
             while (!exit)
             {
                 Console.WriteLine("\n===== ADDRESS BOOK MENU =====");
-                Console.WriteLine("1. Create  Address Books");
+                Console.WriteLine("1. Create Address Books");
                 Console.WriteLine("2. Select Address Book");
-                Console.WriteLine("3. Exit");
+                Console.WriteLine("3. Search Person by City/State (UC8)");
+                Console.WriteLine("4. Exit");
                 Console.WriteLine("Enter Choice");
 
                 int choice = int.Parse(Console.ReadLine());
@@ -23,7 +24,7 @@ namespace AddressBook
                 switch (choice)
                 {
                     case 1:
-                       cu.CreateAddressBooks();
+                        cu.CreateAddressBooks();
                         break;
 
                     case 2:
@@ -35,6 +36,10 @@ namespace AddressBook
                         break;
 
                     case 3:
+                        cu.SearchPersonByCityOrStateForMultipleAddressBook(); 
+                        break;
+
+                    case 4:
                         exit = true;
                         Console.WriteLine("Exiting Address Book System...");
                         break;
@@ -45,8 +50,6 @@ namespace AddressBook
                 }
             }
         }
-
-       
 
         private void ShowContactMenu()
         {

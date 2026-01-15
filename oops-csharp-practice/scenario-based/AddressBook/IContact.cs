@@ -11,7 +11,10 @@ namespace AddressBook
         void DeleteContact();
 
         void AddMultipleContact();
-        
+        void SearchPersonByCityOrStateForMultipleAddressBook();
+
+
+
 
     }
 }

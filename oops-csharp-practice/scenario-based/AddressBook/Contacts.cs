@@ -9,15 +9,17 @@ namespace AddressBook
         private string firstName;
         private string lastName;
         private string address;
+        private string state;
         private string city;
         private string zip;
         private string phoneNumber;
         private string email;
-         public Contacts(string firstName,string lastName, string address, string city, string zip, string phoneNumber, string email){
+         public Contacts(string firstName,string lastName, string address, string city,string state, string zip, string phoneNumber, string email){
             this.firstName = firstName;
             this.lastName = lastName;
             this.address = address;
             this.city = city;
+            this.state = state;
             this.zip = zip;
             this.phoneNumber = phoneNumber;
             this.email = email;
@@ -71,6 +73,18 @@ namespace AddressBook
                 city = value;
             }
         }
+        public string State
+        {
+            get
+            {
+                return state;
+            }
+            set
+            {
+                state = value;
+            }
+        }
+        
         public string Zip
         {
             get
