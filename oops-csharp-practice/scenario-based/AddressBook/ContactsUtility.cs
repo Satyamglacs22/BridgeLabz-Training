@@ -232,13 +232,13 @@ namespace AddressBook
                     if (choice == 1 &&
                         contacts[j].City.Equals(value, StringComparison.OrdinalIgnoreCase))
                     {
-                        PrintContact(contacts[j], addressBookNames[i]);
+                        PrintContactWithBookName(contacts[j], addressBookNames[i]);
                         found = true;
                     }
                     else if (choice == 2 &&
                         contacts[j].State.Equals(value, StringComparison.OrdinalIgnoreCase))
                     {
-                        PrintContact(contacts[j], addressBookNames[i]);
+                        PrintContactWithBookName(contacts[j], addressBookNames[i]);
                         found = true;
                     }
                 }
@@ -250,7 +250,67 @@ namespace AddressBook
             }
         }
 
-        private void PrintContact(Contacts c, string bookName)
+        // ================= UC9 =================
+        // Search Person by City or State 
+
+
+        // ================= UC9 =================
+        // View + Count Persons by City or State in Selected Address Book
+
+        public void SearchPersonByCityOrState()
+        {
+            if (!IsAddressBookSelected())
+                return;
+
+            if (contactCount == 0)
+            {
+                Console.WriteLine("No contacts available in selected Address Book");
+                return;
+            }
+
+            Console.WriteLine("View & Count By:");
+            Console.WriteLine("1. City");
+            Console.WriteLine("2. State");
+            int choice = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter City/State value");
+            string value = Console.ReadLine().Trim();
+
+            int count = 0;
+
+            Console.WriteLine("\n--- Matching Contacts ---");
+
+            for (int i = 0; i < contactCount; i++)
+            {
+                if (choice == 1 &&
+                    contactList[i].City.Equals(value, StringComparison.OrdinalIgnoreCase))
+                {
+                    PrintContact(contactList[i]);
+                    count++;
+                }
+                else if (choice == 2 &&
+                    contactList[i].State.Equals(value, StringComparison.OrdinalIgnoreCase))
+                {
+                    PrintContact(contactList[i]);
+                    count++;
+                }
+            }
+
+            Console.WriteLine("----------------------------------");
+            if (choice == 1)
+                Console.WriteLine($"Total persons from City '{value}' : {count}");
+            else
+                Console.WriteLine($"Total persons from State '{value}' : {count}");
+
+            if (count == 0)
+            {
+                Console.WriteLine("No matching contacts found.");
+            }
+        }
+
+
+
+        private void PrintContactWithBookName(Contacts c, string bookName)
         {
             Console.WriteLine("----------------------------------");
             Console.WriteLine($"Address Book : {bookName}");
@@ -259,9 +319,22 @@ namespace AddressBook
             Console.WriteLine($"State        : {c.State}");
             Console.WriteLine($"Phone        : {c.PhoneNumber}");
             Console.WriteLine($"Email        : {c.Email}");
-            Console.WriteLine($"Zip Code     :{c.Zip}");
-
+            Console.WriteLine($"Zip Code     : {c.Zip}");
         }
+
+        // For UC9
+        private void PrintContact(Contacts c)
+        {
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine($"Name         : {c.FirstName} {c.LastName}");
+            Console.WriteLine($"City         : {c.City}");
+            Console.WriteLine($"State        : {c.State}");
+            Console.WriteLine($"Phone        : {c.PhoneNumber}");
+            Console.WriteLine($"Email        : {c.Email}");
+            Console.WriteLine($"Zip Code     : {c.Zip}");
+        }
+
+
 
         // ================= HELPER =================
 

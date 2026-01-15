@@ -62,7 +62,8 @@ namespace AddressBook
                 Console.WriteLine("2. Update Contact");
                 Console.WriteLine("3. Delete Contact");
                 Console.WriteLine("4. Add Multiple Contacts");
-                Console.WriteLine("5. Back to Address Book Menu");
+                Console.WriteLine("5. Search Person By City or State");
+                Console.WriteLine("6. Back to Address Book Menu");
                 Console.WriteLine("Enter Choice");
 
                 int choice = int.Parse(Console.ReadLine());
@@ -86,6 +87,10 @@ namespace AddressBook
                         break;
 
                     case 5:
+                        cu.SearchPersonByCityOrState();
+                        break;
+
+                    case 6:
                         back = true;
                         break;
 
