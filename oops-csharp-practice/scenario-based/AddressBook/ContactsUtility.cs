@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Xml.Linq;
 
 namespace AddressBook
 {
@@ -109,12 +110,26 @@ namespace AddressBook
             Console.WriteLine("Enter Email");
             string email = Console.ReadLine();
 
+            // ===== DUPLICATE CHECK =====
+            for (int i = 0; i < contactCount; i++)
+            {
+                if (contactList[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
+                    contactList[i].LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Contact Already Exists in this Address Book!");
+                    return; 
+                    
+                }
+            }
+
+            // ===== ADD CONTACT (ONLY ONCE) =====
             contactList[contactCount++] = new Contacts(
                 firstName, lastName, address, city, zip, phoneNumber, email
             );
 
             Console.WriteLine("Contact Added Successfully");
         }
+
 
         public void AddMultipleContact()
         {
