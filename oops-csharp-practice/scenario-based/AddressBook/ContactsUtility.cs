@@ -307,6 +307,48 @@ namespace AddressBook
                 Console.WriteLine("No matching contacts found.");
             }
         }
+        // ================= SORT (ALTERNATE WAY) =================
+        // Sort entries alphabetically by Person's Name
+        // PURE ARRAY + BUBBLE SORT
+
+        public void SortContactsByName()
+        {
+            if (!IsAddressBookSelected())
+                return;
+
+            if (contactCount == 0)
+            {
+                Console.WriteLine("No contacts available to sort");
+                return;
+            }
+
+            // Bubble Sort on array
+            for (int i = 0; i < contactCount - 1; i++)
+            {
+                for (int j = 0; j < contactCount - i - 1; j++)
+                {
+                    string name1 = contactList[j].FirstName + " " + contactList[j].LastName;
+                    string name2 = contactList[j + 1].FirstName + " " + contactList[j + 1].LastName;
+
+                    if (string.Compare(name1, name2, StringComparison.OrdinalIgnoreCase) > 0)
+                    {
+                        // Swap
+                        Contacts temp = contactList[j];
+                        contactList[j] = contactList[j + 1];
+                        contactList[j + 1] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("\n--- Contacts Sorted Alphabetically by Name ---");
+
+            for (int i = 0; i < contactCount; i++)
+            {
+                Console.WriteLine(contactList[i].ToString());
+                Console.WriteLine("----------------------------------");
+            }
+        }
+
 
 
 

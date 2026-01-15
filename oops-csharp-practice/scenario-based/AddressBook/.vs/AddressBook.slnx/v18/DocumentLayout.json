@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\AddressBook\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A79F4F8-F931-76EB-71F8-BDB43463694F}|AddressBook.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\addressbook\\contactsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A79F4F8-F931-76EB-71F8-BDB43463694F}|AddressBook.csproj|solutionrelative:contactsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0A79F4F8-F931-76EB-71F8-BDB43463694F}|AddressBook.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\addressbook\\contactsutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A79F4F8-F931-76EB-71F8-BDB43463694F}|AddressBook.csproj|solutionrelative:contactsutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A79F4F8-F931-76EB-71F8-BDB43463694F}|AddressBook.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\addressbook\\icontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A79F4F8-F931-76EB-71F8-BDB43463694F}|AddressBook.csproj|solutionrelative:icontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A79F4F8-F931-76EB-71F8-BDB43463694F}|AddressBook.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\addressbook\\contactsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A79F4F8-F931-76EB-71F8-BDB43463694F}|AddressBook.csproj|solutionrelative:contactsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A79F4F8-F931-76EB-71F8-BDB43463694F}|AddressBook.csproj|d:\\bridgelabz-training\\oops-csharp-practice\\scenario-based\\addressbook\\contacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,39 +58,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ContactsMenu.cs",
               "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\AddressBook\\ContactsMenu.cs",
               "RelativeDocumentMoniker": "ContactsMenu.cs",
               "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\AddressBook\\ContactsMenu.cs",
               "RelativeToolTip": "ContactsMenu.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAQwEEAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAswCYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-14T06:31:38.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "IContact.cs",
               "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\AddressBook\\IContact.cs",
               "RelativeDocumentMoniker": "IContact.cs",
               "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\AddressBook\\IContact.cs",
               "RelativeToolTip": "IContact.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-14T06:31:15.362Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ContactsUtility.cs",
               "DocumentMoniker": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\AddressBook\\ContactsUtility.cs",
               "RelativeDocumentMoniker": "ContactsUtility.cs",
               "ToolTip": "D:\\BridgeLabz-Training\\oops-csharp-practice\\scenario-based\\AddressBook\\ContactsUtility.cs",
               "RelativeToolTip": "ContactsUtility.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwD4BAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-14T06:31:00.055Z",
               "EditorCaption": ""

@@ -6,6 +6,7 @@ namespace AddressBook
     {
         ContactsUtility cu = new ContactsUtility();
 
+        // ================= MAIN MENU =================
         public void ShowMenu()
         {
             bool exit = false;
@@ -28,15 +29,15 @@ namespace AddressBook
                         break;
 
                     case 2:
-                        bool selected = cu.SelectAddressBook();
-                        if (selected)
+                        if (cu.SelectAddressBook())
                         {
                             ShowContactMenu();
                         }
                         break;
 
                     case 3:
-                        cu.SearchPersonByCityOrStateForMultipleAddressBook(); 
+                        
+                        cu.SearchPersonByCityOrStateForMultipleAddressBook();
                         break;
 
                     case 4:
@@ -51,6 +52,7 @@ namespace AddressBook
             }
         }
 
+        // ================= CONTACT MENU =================
         private void ShowContactMenu()
         {
             bool back = false;
@@ -62,8 +64,9 @@ namespace AddressBook
                 Console.WriteLine("2. Update Contact");
                 Console.WriteLine("3. Delete Contact");
                 Console.WriteLine("4. Add Multiple Contacts");
-                Console.WriteLine("5. Search Person By City or State");
-                Console.WriteLine("6. Back to Address Book Menu");
+                Console.WriteLine("5. View & Count by City/State (UC9)");
+                Console.WriteLine("6. Sort Contacts Alphabetically by Name");
+                Console.WriteLine("7. Back to Address Book Menu");
                 Console.WriteLine("Enter Choice");
 
                 int choice = int.Parse(Console.ReadLine());
@@ -87,10 +90,16 @@ namespace AddressBook
                         break;
 
                     case 5:
+                        
                         cu.SearchPersonByCityOrState();
                         break;
 
                     case 6:
+                        
+                        cu.SortContactsByName();
+                        break;
+
+                    case 7:
                         back = true;
                         break;
 

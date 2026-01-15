@@ -15,6 +15,8 @@ namespace AddressBook
 
         //void SearchPersonByCityorState();
 
+        void SortContactsByName();
+
 
 
     }
