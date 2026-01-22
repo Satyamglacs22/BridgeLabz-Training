@@ -1,206 +1,168 @@
-BridgeLab Training
+🚀 BridgeLabz Training 
+
+📍 C# & .NET Learning Log
 
 📅 Day 1 — 18 December 2025
-🔰 Foundations & Setup
-🎯 Learning Objectives
+🎯 Learning Goals
 
-Understand C# basics and the .NET ecosystem
+By the end of Day 1, the focus was to:
 
-Learn Git & GitHub fundamentals
+💡 Understand the fundamentals of C# and the .NET Framework
 
-Maintain a clean and scalable project structure
+🔧 Learn the basic Git & GitHub workflow
 
-🛠️ Work Completed
+🗂️ Create and maintain a clean project structure
 
-Created and connected a GitHub repository
+🛠️ Activities & Work Completed
 
-Initialized Git (git init)
+🧑‍💻 Created a new GitHub repository
 
-Designed a structured folder hierarchy
+🔗 Connected repository with the local system
 
-Learned C# & .NET basics
+📂 Initialized Git using git init
 
-Compared C# vs Java
+🗃️ Designed a structured folder hierarchy
 
-Understood Compiler vs Interpreter
+📘 Learned basics of C# and .NET
 
-Solved 10 beginner C# questions
+⚖️ Compared C# vs Java
+
+🔍 Understood Compiler vs Interpreter
+
+❓ Solved 10 basic C# questions
 
 🧠 Key Takeaways
 
-Version control is essential for real-world projects
+Importance of version control in real-world projects
 
-.NET enables scalable application development
+Role of .NET in application development
 
-Organized repositories improve maintainability
+Clean repository structure improves maintainability
 
 📅 Day 2 — 19 December 2025
-🧩 Strengthening Core Concepts
-🎯 Learning Objectives
+🎯 Learning Goals
 
-Understand .NET Framework architecture
+🧩 Understand .NET Framework architecture
 
-Improve C# fundamentals
+📘 Strengthen C# fundamentals
 
-Enhance logical thinking
+🧠 Improve logical thinking
 
-🛠️ Work Completed
+🛠️ Activities & Work Completed
 
-Studied .NET core components
+🏗️ Studied core components of .NET
 
-Learned:
+📚 Learned Operators, Access Modifiers, Data Types
 
-Data Types
+✅ Solved 16 Level-1 problems
 
-Operators
-
-Access Modifiers
-
-Solved:
-
-✅ 16 Level-1 problems
-
-🔍 12 Level-2 problems
+🔍 Practiced 12 Level-2 problems
 
 🧠 Key Takeaways
 
-Clear understanding of internal .NET working
+Clear understanding of .NET internals
 
-Stronger grip on C# syntax
+Stronger C# syntax knowledge
 
-Increased confidence in problem-solving
+Improved problem-solving confidence
 
 📅 Day 3 — 20 December 2025
-🔐 Access Control & Revision
 🎯 Focus Areas
 
-Access Modifiers in C#
+📚 Access Control in C#
 
-Concept revision
+🔄 Revision of C# fundamentals
 
-Coding practice
+🧩 LeetCode problem solving
 
-🛠️ Work Completed
+⚙️ Tasks Completed
 
-Studied:
+🛡️ Studied Access Modifiers:
 
 public, private, protected, internal
 
-Revised:
+🔄 Revised data types, operators & syntax
 
-Data Types
+📖 Explored C# documentation
 
-Operators
-
-Syntax & structure
-
-Read official C# resources
-
-Solved 8 LeetCode problems
-
-🧠 Key Takeaways
-
-Clear understanding of scope & visibility
-
-Stronger fundamentals through revision
-
-Improved logic via consistent practice
+🧩 Solved 8 LeetCode problems
 
 📅 Day 4 — 22 December 2025
-🔄 Control Flow & Logic Building
-🎯 Learning Objectives
+🔀 Control Flow in C#
 
-Understand control flow
+Control Flow determines:
 
-Apply conditionals and loops
+Decision making
 
-Solve logic-based problems
+Repetition
 
-🧩 Concepts Covered
+Logical branching
 
-Conditional Statements: if, else, switch
+🛠️ Statements Covered
+
+Conditionals: if, else, switch
 
 Loops: for, while, do-while, foreach
 
-Jump Statements: break, continue, return
+Jump: break, continue, return
 
 🧠 Key Takeaways
 
-Control flow defines execution order
+Control flow governs execution order
 
 Loops reduce redundancy
 
-Conditionals handle decision-making
+Better logical reasoning
 
 📅 Day 5 — 23 December 2025
-📦 Arrays in C#
-🎯 Learning Objectives
+📚 Arrays in C#
 
-Learn array initialization
+1-D Arrays
 
-Work with 1-D & 2-D arrays
+2-D Arrays
 
-Solve array-based problems
+Index-based access
 
 🧠 Key Takeaways
 
-Arrays simplify data handling
+Arrays simplify bulk data handling
 
-Loops are essential for array traversal
-
-Different array types suit different use cases
+Loops are essential for array processing
 
 📅 Day 6 — 24 December 2025
-🔧 Methods & Reusability
-🎯 Learning Objectives
+📚 Methods in C#
 
-Define and call methods
+Void Methods
 
-Use parameters and return values
+Return Type Methods
 
-🧩 Topics Covered
-
-Void methods
-
-Return-type methods
-
-Parameterized & non-parameterized methods
+Parameterized & Non-Parameterized Methods
 
 🧠 Key Takeaways
 
-Methods reduce code duplication
+Methods improve reusability
 
 Parameters increase flexibility
 
-Clean code improves maintainability
+Clean structure improves maintainability
 
 📅 Day 7 — 26 December 2025
-🧵 Strings & Text Processing
-🎯 Learning Objectives
+📚 Strings in C#
 
-Understand strings
+String declaration & initialization
 
-Learn string methods
+Common string methods
 
-Apply string-based logic
+Character traversal
 
 🧠 Key Takeaways
 
 Strings are immutable
 
-Built-in methods simplify manipulation
-
-String logic is essential in real-world apps
+Built-in methods simplify text handling
 
 📅 Day 8 — 29 December 2025
-🧱 Introduction to OOP
-🎯 Learning Objectives
-
-Understand OOP fundamentals
-
-Relate OOP to previous C# concepts
-
-🧩 Core Concepts
+📚 Introduction to OOP
 
 Class & Object
 
@@ -210,13 +172,12 @@ Abstraction
 
 🧠 Key Takeaways
 
-OOP improves structure & readability
+OOP improves readability & scalability
 
-Programs become modular and reusable
+Real-world problems map well to OOP
 
 📅 Day 9 — 30 December 2025
-🏗️ Constructors & Object Creation
-🧩 Topics Covered
+📚 Constructors in C#
 
 Default Constructor
 
@@ -226,125 +187,91 @@ Constructor Overloading
 
 🧠 Key Takeaways
 
-Constructors ensure valid object initialization
+Constructors initialize objects safely
 
-Each object has its own state
-
-Constructor types provide flexibility
+Each object has independent data
 
 📅 Day 10 — 31 December 2025
-🧠 Scenario-Based Learning
-🛠️ Projects
+🏦 Scenario-Based Learning
 
-🏦 Bank Manager & Math Utility
+Bank Manager & Math Utility
 
-🧾 Invoice Generator
+Invoice Generator
 
-📚 Concepts Learned
+📚 Concepts Covered
 
-this, static, sealed
+this keyword
+
+static
+
+sealed
 
 is operator
 
-🧠 Key Takeaways
-
-Scenario-based problems improve logic
-
-Utility classes simplify reusable logic
-
 📅 Day 11 — 1 January 2026
-📐 Class, Object & UML
-🛠️ Scenario
+📐 UML & OOP
 
-☕ Cafeteria Menu System
+Class vs Object
 
-🧠 Key Takeaways
+Class, Object & Sequence Diagrams
 
-Clear distinction between class & object
+☕ Scenario
 
-UML helps visualize system design
+Cafeteria Menu System
 
 📅 Day 12 — 2 January 2026
-🧬 Inheritance & Real-World Logic
-🛠️ Scenarios
+🧬 Inheritance
+
+Code reuse
+
+Reduced duplication
+
+Better structure
+
+🎯 Scenarios
 
 🚌 Bus Route Tracker
 
 🎲 Lucky Draw System
 
-🧠 Key Takeaways
-
-Inheritance reduces duplication
-
-Arrays + control flow model real systems
-
 📅 Day 13 — 5 January 2026
-🔐 Encapsulation, Abstraction & Interfaces
-🛠️ Projects
+🧱 OOP Concepts
 
-🏥 Hospital Management System
+Encapsulation
 
-🚗 Vehicle Rental System
+Abstraction
 
-🧠 Key Takeaways
+Interfaces
 
-Encapsulation protects data
+🏥 & 🚗 Scenarios
 
-Interfaces enforce structure
+Hospital Management
 
-Abstraction reduces complexity
+Vehicle Rental System
 
 📅 Day 14 — 6 January 2026
-🌍 Real-World Scenario Design
-🛠️ Projects
-
-🐦 Bird Sanctuary System
-
+🐦 Bird Sanctuary
 📞 Call Log Manager
+🧠 Takeaways
 
-🧠 Key Takeaways
+Arrays handle structured data
 
-Arrays manage structured data
-
-OOP models real-life systems effectively
+OOP models real-life systems
 
 📅 Day 15 — 7 January 2026
-🔗 Data Structures Introduction
-🧩 Topics
+🔗 Data Structures
 
-Linked List basics
+Linked List fundamentals
 
-🛠️ Project
+💼 Scenario
 
-💼 Employee Wage Computation System
-
-🧠 Key Takeaways
-
-Dynamic data structures improve flexibility
-
-Proper structure simplifies logic
+Employee Wage Computation
 
 📅 Day 16 — 8 January 2026
-🗃️ Advanced Data Structures
-🧩 Topics
-
-Stack, Queue
-
-HashMap, HashSet
-
-🛠️ Project
-
-🏠 Smart Home Automation System
-
-🧠 Key Takeaways
-
-Hash-based collections improve performance
-
-Data structures simplify system design
-
+📚 Stack, Queue, HashMap, HashSet
+🏠 Smart Home Automation
 📅 Day 17 — 9 January 2026
-🔢 Sorting Algorithms
-🧩 Topics
+🔄 Sorting Algorithms
 
 Bubble Sort
 
@@ -352,85 +279,78 @@ Selection Sort
 
 Insertion Sort
 
-🛠️ Projects
+🏧 & 🏃 Scenarios
 
-🏧 ATM Dispenser System
+ATM Dispenser
 
-🏃 Fit Tracker
-
-🧠 Key Takeaways
-
-Sorting improves data efficiency
-
-Algorithm choice matters
+Fit Tracker
 
 📅 Day 18 — 12 January 2026
-🔍 Searching & String Optimization
-🧩 Topics
+🧵 StringBuilder & Searching
 
-StringBuilder
+Linear Search
 
-Linear & Binary Search
+Binary Search
 
-🛠️ Projects
+🏭🪑💰 Scenarios
 
-🏭 Pipe Cutting System
+Metal Factory
 
-🪑 Furniture Manufacturing
+Furniture Manufacturing
 
-💰 Loan Buddy
-
-🧠 Key Takeaways
-
-StringBuilder boosts performance
-
-Binary Search is faster on sorted data
+Loan Buddy
 
 📅 Day 19 — 13 January 2026
-⏱️ Runtime Analysis & OOP Practice
-🧩 Topics
+⏱️ Runtime Analysis
 
-Time Complexity
+Best / Average / Worst Case
 
-Big-O basics
+Intro to Big-O
 
-🛠️ Projects
+🎬📚 Scenarios
 
-🎬 Cinema Time System
+Cinema Time
 
-📚 Book Buddy
+Book Buddy
 
-🧠 Key Takeaways
+📅 Day 20–21 — 14–15 January 2026
+📒 Address Book System (UC-1 to UC-12)
 
-Performance analysis is crucial
+Encapsulation
 
-OOP improves scalability
+Interfaces
 
-📅 Day 20 — 14 January 2026
-📇 Address Book System (Ongoing)
-🛠️ Use Cases Completed (UC-1 → UC-8)
+Sorting & Searching
 
-Contact creation & encapsulation
+Doubly Linked List & Stack
 
-Add, edit, delete contacts
+🌐 Browser Buddy
 
-Multiple address books
+DLL for navigation
 
-Duplicate prevention
+Stack for history
 
-Search by city/state
-
-🧠 Key Takeaways
-
-UC-based development scales well
-
-Interfaces & utilities improve maintainability
-
-Large systems evolve incrementally
-
+📅 Day 22 — 16 January 2026
+🚦 TrafficManager
+📚 BookShelf System
+📅 Day 23 — 17 January 2026
+⚡ FlashDealz (Quick Sort)
+🏃 FitnessTracker (Bubble Sort)
+📅 Day 24 — 19 January 2026
+📦 ParcelTracker (SLL)
+📝 ExamProctor (Stack + HashMap)
+📅 Day 25 — 20 January 2026
+🆔 Radix Sort (Aadhar)
+🔐 Password Cracker (Backtracking)
+📅 Day 26 — 21 January 2026
+🎓 EduResults (Merge Sort)
+🛒 SmartCheckout (Queue + HashMap)
 🚀 Final Outcome
 
-✔ Strong foundation in C# & .NET
-✔ Practical experience with OOP & Data Structures
-✔ Improved problem-solving & system design
-✔ Ready to extend real-world applications
+Strong foundation in C# & .NET
+
+Confident in Data Structures & Algorithms
+
+Hands-on experience with real-world scenarios
+
+Improved logical thinking & system design
