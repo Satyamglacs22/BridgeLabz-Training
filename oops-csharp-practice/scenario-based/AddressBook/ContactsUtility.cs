@@ -1,17 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AddressBook
 {
     internal class ContactsUtility : IContact
     {
         // ===== AddressBook Level =====
-        private Contacts[][] addressBooks;
-        private string[] addressBookNames;
-        private int addressBookCount = 0;
+        // Key = AddressBook Name, Value = List of Contacts
+        private Dictionary<string, List<Contacts>> addressBooks =
+            new Dictionary<string, List<Contacts>>(StringComparer.OrdinalIgnoreCase);
 
-        // Selected AddressBook
-        private Contacts[] contactList = null;
-        private int contactCount = 0;
+        // Selected Address Book
+        private List<Contacts> contactList = null;
+        private string selectedBookName = null;
 
         // ================= ADDRESS BOOK =================
 
@@ -19,9 +20,6 @@ namespace AddressBook
         {
             Console.WriteLine("How many Address Books do you want to create?");
             int count = int.Parse(Console.ReadLine());
-
-            addressBooks = new Contacts[count][];
-            addressBookNames = new string[count];
 
             for (int i = 0; i < count; i++)
             {
@@ -34,19 +32,13 @@ namespace AddressBook
             Console.WriteLine("Enter Address Book Name");
             string name = Console.ReadLine().Trim();
 
-            for (int i = 0; i < addressBookCount; i++)
+            if (addressBooks.ContainsKey(name))
             {
-                if (addressBookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
-                {
-                    Console.WriteLine("Address Book already exists");
-                    return;
-                }
+                Console.WriteLine("Address Book already exists");
+                return;
             }
 
-            addressBookNames[addressBookCount] = name;
-            addressBooks[addressBookCount] = new Contacts[100];
-            addressBookCount++;
-
+            addressBooks[name] = new List<Contacts>();
             Console.WriteLine("Address Book Created Successfully");
         }
 
@@ -55,15 +47,12 @@ namespace AddressBook
             Console.WriteLine("Enter Address Book Name");
             string name = Console.ReadLine().Trim();
 
-            for (int i = 0; i < addressBookCount; i++)
+            if (addressBooks.ContainsKey(name))
             {
-                if (addressBookNames[i].Equals(name, StringComparison.OrdinalIgnoreCase))
-                {
-                    contactList = addressBooks[i];
-                    contactCount = GetContactCount(contactList);
-                    Console.WriteLine("Address Book Selected Successfully");
-                    return true;
-                }
+                selectedBookName = name;
+                contactList = addressBooks[name];
+                Console.WriteLine("Address Book Selected Successfully");
+                return true;
             }
 
             Console.WriteLine("Address Book Not Found");
@@ -92,6 +81,17 @@ namespace AddressBook
             Console.WriteLine("Enter Last Name");
             string lastName = Console.ReadLine().Trim();
 
+            // Duplicate Check
+            foreach (Contacts c in contactList)
+            {
+                if (c.FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
+                    c.LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Contact Already Exists in this Address Book!");
+                    return;
+                }
+            }
+
             Console.WriteLine("Enter Address");
             string address = Console.ReadLine().Trim();
 
@@ -105,25 +105,14 @@ namespace AddressBook
             string zip = Console.ReadLine().Trim();
 
             Console.WriteLine("Enter Phone Number");
-            string phoneNumber = Console.ReadLine().Trim();
+            string phone = Console.ReadLine().Trim();
 
             Console.WriteLine("Enter Email");
             string email = Console.ReadLine().Trim();
 
-            // ===== DUPLICATE CHECK =====
-            for (int i = 0; i < contactCount; i++)
-            {
-                if (contactList[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
-                    contactList[i].LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
-                {
-                    Console.WriteLine("Contact Already Exists in this Address Book!");
-                    return;
-                }
-            }
-
-            contactList[contactCount++] = new Contacts(
-                firstName, lastName, address, city, state, zip, phoneNumber, email
-            );
+            contactList.Add(new Contacts(
+                firstName, lastName, address, city, state, zip, phone, email
+            ));
 
             Console.WriteLine("Contact Added Successfully");
         }
@@ -151,16 +140,16 @@ namespace AddressBook
             Console.WriteLine("Enter Last Name to Update");
             string lName = Console.ReadLine().Trim();
 
-            for (int i = 0; i < contactCount; i++)
+            foreach (Contacts c in contactList)
             {
-                if (contactList[i].FirstName.Equals(fName, StringComparison.OrdinalIgnoreCase) &&
-                    contactList[i].LastName.Equals(lName, StringComparison.OrdinalIgnoreCase))
+                if (c.FirstName.Equals(fName, StringComparison.OrdinalIgnoreCase) &&
+                    c.LastName.Equals(lName, StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine("Enter New City");
-                    contactList[i].City = Console.ReadLine().Trim();
+                    c.City = Console.ReadLine().Trim();
 
                     Console.WriteLine("Enter New Phone Number");
-                    contactList[i].PhoneNumber = Console.ReadLine().Trim();
+                    c.PhoneNumber = Console.ReadLine().Trim();
 
                     Console.WriteLine("Contact Updated Successfully");
                     return;
@@ -180,23 +169,27 @@ namespace AddressBook
             Console.WriteLine("Enter Last Name to Delete");
             string lName = Console.ReadLine().Trim();
 
-            for (int i = 0; i < contactCount; i++)
-            {
-                if (contactList[i].FirstName.Equals(fName, StringComparison.OrdinalIgnoreCase) &&
-                    contactList[i].LastName.Equals(lName, StringComparison.OrdinalIgnoreCase))
-                {
-                    for (int j = i; j < contactCount - 1; j++)
-                    {
-                        contactList[j] = contactList[j + 1];
-                    }
+            Contacts contactToRemove = null;
 
-                    contactList[--contactCount] = null;
-                    Console.WriteLine("Contact Deleted Successfully");
-                    return;
+            foreach (Contacts c in contactList)
+            {
+                if (c.FirstName.Equals(fName, StringComparison.OrdinalIgnoreCase) &&
+                    c.LastName.Equals(lName, StringComparison.OrdinalIgnoreCase))
+                {
+                    contactToRemove = c;
+                    break;
                 }
             }
 
-            Console.WriteLine("Contact Not Found");
+            if (contactToRemove != null)
+            {
+                contactList.Remove(contactToRemove);
+                Console.WriteLine("Contact Deleted Successfully");
+            }
+            else
+            {
+                Console.WriteLine("Contact Not Found");
+            }
         }
 
         // ================= UC8 =================
@@ -204,7 +197,7 @@ namespace AddressBook
 
         public void SearchPersonByCityOrStateForMultipleAddressBook()
         {
-            if (addressBookCount == 0)
+            if (addressBooks.Count == 0)
             {
                 Console.WriteLine("No Address Books Available");
                 return;
@@ -220,25 +213,14 @@ namespace AddressBook
 
             bool found = false;
 
-            for (int i = 0; i < addressBookCount; i++)
+            foreach (var book in addressBooks)
             {
-                Contacts[] contacts = addressBooks[i];
-
-                for (int j = 0; j < contacts.Length; j++)
+                foreach (Contacts c in book.Value)
                 {
-                    if (contacts[j] == null)
-                        continue;
-
-                    if (choice == 1 &&
-                        contacts[j].City.Equals(value, StringComparison.OrdinalIgnoreCase))
+                    if ((choice == 1 && c.City.Equals(value, StringComparison.OrdinalIgnoreCase)) ||
+                        (choice == 2 && c.State.Equals(value, StringComparison.OrdinalIgnoreCase)))
                     {
-                        PrintContactWithBookName(contacts[j], addressBookNames[i]);
-                        found = true;
-                    }
-                    else if (choice == 2 &&
-                        contacts[j].State.Equals(value, StringComparison.OrdinalIgnoreCase))
-                    {
-                        PrintContactWithBookName(contacts[j], addressBookNames[i]);
+                        PrintContactWithBookName(c, book.Key);
                         found = true;
                     }
                 }
@@ -251,22 +233,11 @@ namespace AddressBook
         }
 
         // ================= UC9 =================
-        // Search Person by City or State 
-
-
-        // ================= UC9 =================
-        // View + Count Persons by City or State in Selected Address Book
+        // View + Count in Selected Address Book
 
         public void SearchPersonByCityOrState()
         {
-            if (!IsAddressBookSelected())
-                return;
-
-            if (contactCount == 0)
-            {
-                Console.WriteLine("No contacts available in selected Address Book");
-                return;
-            }
+            if (!IsAddressBookSelected()) return;
 
             Console.WriteLine("View & Count By:");
             Console.WriteLine("1. City");
@@ -278,117 +249,52 @@ namespace AddressBook
 
             int count = 0;
 
-            Console.WriteLine("\n--- Matching Contacts ---");
-
-            for (int i = 0; i < contactCount; i++)
+            foreach (Contacts c in contactList)
             {
-                if (choice == 1 &&
-                    contactList[i].City.Equals(value, StringComparison.OrdinalIgnoreCase))
+                if ((choice == 1 && c.City.Equals(value, StringComparison.OrdinalIgnoreCase)) ||
+                    (choice == 2 && c.State.Equals(value, StringComparison.OrdinalIgnoreCase)))
                 {
-                    PrintContact(contactList[i]);
-                    count++;
-                }
-                else if (choice == 2 &&
-                    contactList[i].State.Equals(value, StringComparison.OrdinalIgnoreCase))
-                {
-                    PrintContact(contactList[i]);
+                    PrintContact(c);
                     count++;
                 }
             }
 
-            Console.WriteLine("----------------------------------");
-            if (choice == 1)
-                Console.WriteLine($"Total persons from City '{value}' : {count}");
-            else
-                Console.WriteLine($"Total persons from State '{value}' : {count}");
-
-            if (count == 0)
-            {
-                Console.WriteLine("No matching contacts found.");
-            }
+            Console.WriteLine($"Total persons found : {count}");
         }
-        // ================= SORT (ALTERNATE WAY) =================
-        // Sort entries alphabetically by Person's Name
-        // PURE ARRAY + BUBBLE SORT
+
+        // ================= SORT =================
 
         public void SortContactsByName()
         {
-            if (!IsAddressBookSelected())
-                return;
+            if (!IsAddressBookSelected()) return;
 
-            if (contactCount == 0)
-            {
-                Console.WriteLine("No contacts available to sort");
-                return;
-            }
+            contactList.Sort((c1, c2) =>
+                string.Compare(
+                    c1.FirstName + c1.LastName,
+                    c2.FirstName + c2.LastName,
+                    StringComparison.OrdinalIgnoreCase));
 
-            // Bubble Sort on array
-            for (int i = 0; i < contactCount - 1; i++)
-            {
-                for (int j = 0; j < contactCount - i - 1; j++)
-                {
-                    string name1 = contactList[j].FirstName + " " + contactList[j].LastName;
-                    string name2 = contactList[j + 1].FirstName + " " + contactList[j + 1].LastName;
-
-                    if (string.Compare(name1, name2, StringComparison.OrdinalIgnoreCase) > 0)
-                    {
-                        // Swap
-                        Contacts temp = contactList[j];
-                        contactList[j] = contactList[j + 1];
-                        contactList[j + 1] = temp;
-                    }
-                }
-            }
-
-            Console.WriteLine("\n--- Contacts Sorted Alphabetically by Name ---");
-
-            for (int i = 0; i < contactCount; i++)
-            {
-                Console.WriteLine(contactList[i].ToString());
-                Console.WriteLine("----------------------------------");
-            }
+            Console.WriteLine("Contacts Sorted Successfully");
         }
 
-
-
+        // ================= PRINT =================
 
         private void PrintContactWithBookName(Contacts c, string bookName)
         {
             Console.WriteLine("----------------------------------");
             Console.WriteLine($"Address Book : {bookName}");
-            Console.WriteLine($"Name         : {c.FirstName} {c.LastName}");
-            Console.WriteLine($"City         : {c.City}");
-            Console.WriteLine($"State        : {c.State}");
-            Console.WriteLine($"Phone        : {c.PhoneNumber}");
-            Console.WriteLine($"Email        : {c.Email}");
-            Console.WriteLine($"Zip Code     : {c.Zip}");
+            PrintContact(c);
         }
 
-        // For UC9
         private void PrintContact(Contacts c)
         {
+            Console.WriteLine($"Name  : {c.FirstName} {c.LastName}");
+            Console.WriteLine($"City  : {c.City}");
+            Console.WriteLine($"State : {c.State}");
+            Console.WriteLine($"Phone : {c.PhoneNumber}");
+            Console.WriteLine($"Email : {c.Email}");
+            Console.WriteLine($"Zip   : {c.Zip}");
             Console.WriteLine("----------------------------------");
-            Console.WriteLine($"Name         : {c.FirstName} {c.LastName}");
-            Console.WriteLine($"City         : {c.City}");
-            Console.WriteLine($"State        : {c.State}");
-            Console.WriteLine($"Phone        : {c.PhoneNumber}");
-            Console.WriteLine($"Email        : {c.Email}");
-            Console.WriteLine($"Zip Code     : {c.Zip}");
-        }
-
-
-
-        // ================= HELPER =================
-
-        private int GetContactCount(Contacts[] list)
-        {
-            int count = 0;
-            for (int i = 0; i < list.Length; i++)
-            {
-                if (list[i] != null)
-                    count++;
-            }
-            return count;
         }
     }
 }
