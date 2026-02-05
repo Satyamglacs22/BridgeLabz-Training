@@ -1,356 +1,373 @@
-🚀 BridgeLabz Training 
+# 🚀 BridgeLabz C# Training Journey
 
-📍 C# & .NET Learning Log
+ 
 
-📅 Day 1 — 18 December 2025
-🎯 Learning Goals
+---
 
-By the end of Day 1, the focus was to:
+## 📌 About This Repository
 
-💡 Understand the fundamentals of C# and the .NET Framework
+This repository documents my complete learning journey during BridgeLabz Training.  
+It contains daily progress, concepts learned, hands-on practice, and real-world scenario-based implementations in **C# and .NET**.
 
-🔧 Learn the basic Git & GitHub workflow
+---
 
-🗂️ Create and maintain a clean project structure
+## 📅 Daily Progress Report
 
-🛠️ Activities & Work Completed
+---
 
-🧑‍💻 Created a new GitHub repository
+## ✅ Day 1 – 18 December 2025
+### 🎯 Learning Goals
+- Understand C# & .NET fundamentals  
+- Learn Git & GitHub workflow  
+- Maintain clean project structure  
 
-🔗 Connected repository with the local system
+### 🛠️ Work Done
+- Created GitHub repository  
+- Initialized Git  
+- Designed folder structure  
+- Compared C# vs Java  
+- Solved 10 basic problems  
 
-📂 Initialized Git using git init
+### 🧠 Takeaways
+- Importance of version control  
+- Role of .NET  
+- Clean repo structure  
 
-🗃️ Designed a structured folder hierarchy
+---
 
-📘 Learned basics of C# and .NET
+## ✅ Day 2 – 19 December 2025
+### 🎯 Learning Goals
+- Understand .NET architecture  
+- Strengthen C# basics  
+- Improve logic  
 
-⚖️ Compared C# vs Java
+### 🛠️ Work Done
+- Studied .NET components  
+- Learned operators, data types  
+- Solved Level-1 & Level-2 problems  
 
-🔍 Understood Compiler vs Interpreter
+### 🧠 Takeaways
+- Better understanding of application flow  
+- Improved confidence  
 
-❓ Solved 10 basic C# questions
+---
 
-🧠 Key Takeaways
+## ✅ Day 3 – 20 December 2025
+### 📚 Topics
+- Access Modifiers  
+- Concept revision  
+- LeetCode practice  
 
-Importance of version control in real-world projects
+### 🛠️ Work Done
+- Studied: public, private, protected, internal  
+- Solved 8 LeetCode questions  
 
-Role of .NET in application development
+---
 
-Clean repository structure improves maintainability
+## ✅ Day 4 – 22 December 2025
+### 📚 Topic: Control Flow
+- if-else, switch  
+- Loops  
+- Jump statements  
 
-📅 Day 2 — 19 December 2025
-🎯 Learning Goals
+### 🧠 Outcome
+- Better logic building  
+- Improved problem-solving  
 
-🧩 Understand .NET Framework architecture
+---
 
-📘 Strengthen C# fundamentals
+## ✅ Day 5 – 23 December 2025
+### 📚 Topic: Arrays
+- 1-D & 2-D arrays  
+- Initialization  
+- Loop processing  
 
-🧠 Improve logical thinking
+---
 
-🛠️ Activities & Work Completed
+## ✅ Day 6 – 24 December 2025
+### 📚 Topic: Methods
+- Void & Return methods  
+- Parameters  
+- Reusability  
 
-🏗️ Studied core components of .NET
+---
 
-📚 Learned Operators, Access Modifiers, Data Types
+## ✅ Day 7 – 26 December 2025
+### 📚 Topic: Strings
+- Immutability  
+- String methods  
+- Manipulation  
 
-✅ Solved 16 Level-1 problems
+---
 
-🔍 Practiced 12 Level-2 problems
+## ✅ Day 8 – 29 December 2025
+### 📚 Topic: OOP Basics
+- Class & Object  
+- Encapsulation  
+- Abstraction  
 
-🧠 Key Takeaways
+---
 
-Clear understanding of .NET internals
+## ✅ Day 9 – 30 December 2025
+### 📚 Topic: Constructors
+- Default  
+- Parameterized  
+- Overloading  
 
-Stronger C# syntax knowledge
+---
 
-Improved problem-solving confidence
+## ✅ Day 10 – 31 December 2025
+### 📚 Scenarios
+- Bank Manager  
+- Invoice Generator  
 
-📅 Day 3 — 20 December 2025
-🎯 Focus Areas
+### 📖 Concepts
+- this, static, sealed, is  
 
-📚 Access Control in C#
+---
 
-🔄 Revision of C# fundamentals
+## ✅ Day 11 – 1 January 2026
+### 📚 Topics
+- Class vs Object  
+- UML Diagrams  
+- Cafeteria System  
 
-🧩 LeetCode problem solving
+---
 
-⚙️ Tasks Completed
+## ✅ Day 12 – 2 January 2026
+### 📚 Topic: Inheritance
+- Bus Tracker  
+- Lucky Draw System  
 
-🛡️ Studied Access Modifiers:
+---
 
-public, private, protected, internal
+## ✅ Day 13 – 5 January 2026
+### 📚 Topics
+- Encapsulation  
+- Abstraction  
+- Interfaces  
 
-🔄 Revised data types, operators & syntax
+### 🏥 Projects
+- Hospital System  
+- Vehicle Rental  
 
-📖 Explored C# documentation
+---
 
-🧩 Solved 8 LeetCode problems
+## ✅ Day 14 – 6 January 2026
+### 📚 Projects
+- Bird Sanctuary  
+- Call Log Manager  
 
-📅 Day 4 — 22 December 2025
-🔀 Control Flow in C#
+---
 
-Control Flow determines:
+## ✅ Day 15 – 7 January 2026
+### 📚 Topics
+- Linked List  
+- Employee Wage System  
 
-Decision making
+---
 
-Repetition
+## ✅ Day 16 – 8 January 2026
+### 📚 Topics
+- Stack  
+- Queue  
+- HashMap  
+- HashSet  
 
-Logical branching
+### 🏠 Project
+- Smart Home Automation  
 
-🛠️ Statements Covered
+---
 
-Conditionals: if, else, switch
+## ✅ Day 17 – 9 January 2026
+### 📚 Topics
+- Sorting Algorithms  
 
-Loops: for, while, do-while, foreach
+### 🏧 Projects
+- ATM System  
+- Fit Tracker  
 
-Jump: break, continue, return
+---
 
-🧠 Key Takeaways
+## ✅ Day 18 – 12 January 2026
+### 📚 Topics
+- StringBuilder  
+- Searching Algorithms  
 
-Control flow governs execution order
+### 🏭 Projects
+- Pipe Cutting  
+- Furniture System  
+- Loan Buddy  
 
-Loops reduce redundancy
+---
 
-Better logical reasoning
+## ✅ Day 19 – 13 January 2026
+### 📚 Topic: Runtime Analysis
+- Big-O  
+- Best/Average/Worst case  
 
-📅 Day 5 — 23 December 2025
-📚 Arrays in C#
+### 🎬 Projects
+- Cinema Time  
+- Book Buddy  
 
-1-D Arrays
+---
 
-2-D Arrays
+## ✅ Day 20 – 14 January 2026
+### 📚 Project
+- Address Book System (UC-1 to UC-8)
 
-Index-based access
+---
 
-🧠 Key Takeaways
+## ✅ Day 21 – 15 January 2026
+### 📚 Projects
+- Address Book (UC-9 to UC-12)  
+- Browser Buddy  
 
-Arrays simplify bulk data handling
+---
 
-Loops are essential for array processing
+## ✅ Day 22 – 16 January 2026
+### 📚 Projects
+- Traffic Manager  
+- BookShelf  
 
-📅 Day 6 — 24 December 2025
-📚 Methods in C#
+---
 
-Void Methods
+## ✅ Day 23 – 17 January 2026
+### 📚 Projects
+- FlashDealz (Quick Sort)  
+- FitnessTracker (Bubble Sort)  
 
-Return Type Methods
+---
 
-Parameterized & Non-Parameterized Methods
+## ✅ Day 24 – 19 January 2026
+### 📚 Projects
+- ParcelTracker  
+- ExamProctor  
 
-🧠 Key Takeaways
+---
 
-Methods improve reusability
+## ✅ Day 25 – 20 January 2026
+### 📚 Projects
+- Radix Sort  
+- Password Cracker  
 
-Parameters increase flexibility
+---
 
-Clean structure improves maintainability
+## ✅ Day 26 – 21 January 2026
+### 📚 Projects
+- EduResults  
+- SmartCheckout  
 
-📅 Day 7 — 26 December 2025
-📚 Strings in C#
+---
 
-String declaration & initialization
+## ✅ Day 27 – 22 January 2026
+### 📚 Topics
+- Exception Handling  
 
-Common string methods
+### 🚑 Project
+- AmbulanceRoute  
 
-Character traversal
+---
 
-🧠 Key Takeaways
+## ✅ Day 28 – 23 January 2026
+### 📚 Topics
+- Regex  
+- NUnit  
+- Reflection  
+- Attributes  
 
-Strings are immutable
+---
 
-Built-in methods simplify text handling
+## ✅ Day 29 – 27 January 2026
+### 📚 Projects
+- HealthCheckPro  
+- EventTracker  
 
-📅 Day 8 — 29 December 2025
-📚 Introduction to OOP
+---
 
-Class & Object
+## ✅ Day 30 – 28 January 2026
+### 📚 Topics
+- CSV  
+- Regex  
+- MSTest  
 
-Encapsulation
+---
 
-Abstraction
+## ✅ Day 31 – 29 January 2026
+### 📚 Projects
+- StreamBuzz  
+- OceanFleet  
 
-🧠 Key Takeaways
+---
 
-OOP improves readability & scalability
+## ✅ Day 32 – 30 January 2026
+### 📚 Projects
+- Lexical Twist  
+- Future Logistics  
 
-Real-world problems map well to OOP
+---
 
-📅 Day 9 — 30 December 2025
-📚 Constructors in C#
+## ✅ Day 33 – 2 February 2026
+### 📚 Topics
+- Design Principles  
+- Design Patterns  
+- Multithreading  
 
-Default Constructor
+### 🔑 Project
+- FlipKey  
 
-Parameterized Constructor
+---
 
-Constructor Overloading
+## ✅ Day 34 – 3 February 2026
+### 📚 Topics
+- Multithreading  
+- Design Patterns  
 
-🧠 Key Takeaways
+### 🏭 Project
+- Factory Robot Hazard  
 
-Constructors initialize objects safely
+---
 
-Each object has independent data
+## ✅ Day 35 – 4 February 2026
+### 📚 Topics
+- DBMS  
+- SQL (DDL, DML, DCL, TCL)  
 
-📅 Day 10 — 31 December 2025
-🏦 Scenario-Based Learning
+### 🗄️ Practice
+- MS SQL Server  
+- SSMS  
 
-Bank Manager & Math Utility
+---
 
-Invoice Generator
+## 🌟 Key Skills Developed
 
-📚 Concepts Covered
+✔ C# Programming  
+✔ Object-Oriented Design  
+✔ Data Structures & Algorithms  
+✔ Problem Solving  
+✔ SQL & DBMS  
+✔ Testing & Validation  
+✔ Clean Code Principles  
 
-this keyword
+---
 
-static
+## 📌 Tools & Technologies
 
-sealed
+- C#  
+- .NET Framework  
+- Visual Studio  
+- Git & GitHub  
+- MS SQL Server  
+- SSMS  
 
-is operator
+---
 
-📅 Day 11 — 1 January 2026
-📐 UML & OOP
+## 🙌 Conclusion
 
-Class vs Object
+This training helped me build a strong foundation in C#, OOP, Data Structures, and Software Development.  
+Through continuous practice and real-world scenarios, I gained confidence in designing and implementing scalable applications.
 
-Class, Object & Sequence Diagrams
+---
 
-☕ Scenario
+⭐ If you like this repository, don't forget to star it!
 
-Cafeteria Menu System
-
-📅 Day 12 — 2 January 2026
-🧬 Inheritance
-
-Code reuse
-
-Reduced duplication
-
-Better structure
-
-🎯 Scenarios
-
-🚌 Bus Route Tracker
-
-🎲 Lucky Draw System
-
-📅 Day 13 — 5 January 2026
-🧱 OOP Concepts
-
-Encapsulation
-
-Abstraction
-
-Interfaces
-
-🏥 & 🚗 Scenarios
-
-Hospital Management
-
-Vehicle Rental System
-
-📅 Day 14 — 6 January 2026
-🐦 Bird Sanctuary
-📞 Call Log Manager
-🧠 Takeaways
-
-Arrays handle structured data
-
-OOP models real-life systems
-
-📅 Day 15 — 7 January 2026
-🔗 Data Structures
-
-Linked List fundamentals
-
-💼 Scenario
-
-Employee Wage Computation
-
-📅 Day 16 — 8 January 2026
-📚 Stack, Queue, HashMap, HashSet
-🏠 Smart Home Automation
-📅 Day 17 — 9 January 2026
-🔄 Sorting Algorithms
-
-Bubble Sort
-
-Selection Sort
-
-Insertion Sort
-
-🏧 & 🏃 Scenarios
-
-ATM Dispenser
-
-Fit Tracker
-
-📅 Day 18 — 12 January 2026
-🧵 StringBuilder & Searching
-
-Linear Search
-
-Binary Search
-
-🏭🪑💰 Scenarios
-
-Metal Factory
-
-Furniture Manufacturing
-
-Loan Buddy
-
-📅 Day 19 — 13 January 2026
-⏱️ Runtime Analysis
-
-Best / Average / Worst Case
-
-Intro to Big-O
-
-🎬📚 Scenarios
-
-Cinema Time
-
-Book Buddy
-
-📅 Day 20–21 — 14–15 January 2026
-📒 Address Book System (UC-1 to UC-12)
-
-Encapsulation
-
-Interfaces
-
-Sorting & Searching
-
-Doubly Linked List & Stack
-
-🌐 Browser Buddy
-
-DLL for navigation
-
-Stack for history
-
-📅 Day 22 — 16 January 2026
-🚦 TrafficManager
-📚 BookShelf System
-📅 Day 23 — 17 January 2026
-⚡ FlashDealz (Quick Sort)
-🏃 FitnessTracker (Bubble Sort)
-📅 Day 24 — 19 January 2026
-📦 ParcelTracker (SLL)
-📝 ExamProctor (Stack + HashMap)
-📅 Day 25 — 20 January 2026
-🆔 Radix Sort (Aadhar)
-🔐 Password Cracker (Backtracking)
-📅 Day 26 — 21 January 2026
-🎓 EduResults (Merge Sort)
-🛒 SmartCheckout (Queue + HashMap)
-🚀 Final Outcome
-
-Strong foundation in C# & .NET
-
-Confident in Data Structures & Algorithms
-
-Hands-on experience with real-world scenarios
-
-Improved logical thinking & system design
