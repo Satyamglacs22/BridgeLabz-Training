@@ -1,0 +1,15 @@
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\bin\Debug\net10.0\CsvPractice.exe
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\bin\Debug\net10.0\CsvPractice.deps.json
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\bin\Debug\net10.0\CsvPractice.runtimeconfig.json
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\bin\Debug\net10.0\CsvPractice.dll
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\bin\Debug\net10.0\CsvPractice.pdb
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\obj\Debug\net10.0\CsvPractice.GeneratedMSBuildEditorConfig.editorconfig
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\obj\Debug\net10.0\CsvPractice.AssemblyInfoInputs.cache
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\obj\Debug\net10.0\CsvPractice.AssemblyInfo.cs
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\obj\Debug\net10.0\CsvPractice.csproj.CoreCompileInputs.cache
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\obj\Debug\net10.0\CsvPractice.sourcelink.json
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\obj\Debug\net10.0\CsvPractice.dll
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\obj\Debug\net10.0\refint\CsvPractice.dll
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\obj\Debug\net10.0\CsvPractice.pdb
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\obj\Debug\net10.0\CsvPractice.genruntimeconfig.cache
+D:\BridgeLabz-Training\data-structure-csharp-practice\gcr-codebase\csharp-csv\CsvPractice\obj\Debug\net10.0\ref\CsvPractice.dll
